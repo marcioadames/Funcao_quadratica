@@ -89,7 +89,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
                 </abstract>
                 
-                <section>
                 <title> Informações catalográficas.</title>
                     <p><alert>Título:</alert> Função Quadrática</p>
                     <p><alert>Autores:</alert> Leonardo Costa de Borba; Márcio Rostirolla Adames.</p>
@@ -112,7 +111,6 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
                 <p>Curitiba / PR - 2025</p>
                 
-                </section>
         </frontmatter>
 
             <section>
