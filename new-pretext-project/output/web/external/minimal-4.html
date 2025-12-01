@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="pt-BR" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Gráfico de Funções Quadráticas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="article">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Executar (Sage)';
+</script>
+</head>
+<body class="pretext article ignore-math">
+<a class="assistive" href="#ptx-content">Ir ao conteúdo principal</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="minimal.html"><span class="title">Função Quadrática</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Sumário"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Sumário</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Buscando por: </h2>
+<div id="searchempty" class="searchempty"><span>Não encontrado.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="minimal-3.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="up-button button" href="minimal.html" title="Acima"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Acima</span></a><a class="next-button button" href="minimal-5.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="minimal-2.html" class="internal"><span class="title">Pré-textual</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-abstract"><div class="toc-title-box"><a href="minimal-2.html#minimal-2-5" class="internal"><span class="title">Resumo</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="minimal-3.html" class="internal"><span class="codenumber">1</span> <span class="title">Situações realísticas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-3.html#aa" class="internal"><span class="codenumber">1.1</span> <span class="title">Comportamento de uma Função Quadrática</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-3.html#bb" class="internal"><span class="codenumber">1.2</span> <span class="title">Análise e conjectura</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-3.html#cc" class="internal"><span class="codenumber">1.3</span> <span class="title">Conjectura na geometria</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-3.html#minimal-3-5" class="internal"><span class="codenumber">1.4</span> <span class="title">Calculando áreas em diversos cenários</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-3.html#ee" class="internal"><span class="codenumber">1.5</span> <span class="title">Reconhecendo funções quadráticas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-3.html#ff" class="internal"><span class="codenumber">1.6</span> <span class="title">Definindo a Função Quadrática</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="minimal-4.html" class="internal"><span class="codenumber">2</span> <span class="title">Gráfico de Funções Quadráticas</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-4.html#minimal-4-2" class="internal"><span class="codenumber">2.1</span> <span class="title">Função Quadrática do tipo <span class="process-math">\(y=ax^2\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-4.html#minimal-4-3" class="internal"><span class="codenumber">2.2</span> <span class="title">Função do tipo <span class="process-math">\(y=ax^2+k\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-4.html#minimal-4-4" class="internal"><span class="codenumber">2.3</span> <span class="title">Função Quadrática do tipo <span class="process-math">\(y=a(x-m)^2\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-4.html#minimal-4-5" class="internal"><span class="codenumber">2.4</span> <span class="title">Função Quadrática do tipo <span class="process-math">\(y=a(x-m)^2+k\)</span></span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="minimal-4.html#minimal-4-6" class="internal"><span class="codenumber">2.5</span> <span class="title">Escrevendo a Função Quadrática na Forma Canônica</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-4.html#minimal-4-6-8" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Vértice da Parábola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-4.html#minimal-4-6-9" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Domínio e Imagem da Função Quadrática</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="minimal-4.html#minimal-4-7" class="internal"><span class="codenumber">2.6</span> <span class="title">Escrevendo a Função Quadrática na Forma Padrão</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-4.html#minimal-4-7-12" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Esboçando o Gráfico da Função Quadrática</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-4.html#minimal-4-8" class="internal"><span class="codenumber">2.7</span> <span class="title">Foco da Parábola</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-4.html#minimal-4-9" class="internal"><span class="codenumber">2.8</span> <span class="title">Exercícios</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="minimal-5.html" class="internal"><span class="codenumber">3</span> <span class="title">Zeros da Função Quadrática</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="minimal-5.html#minimal-5-2" class="internal"><span class="codenumber">3.1</span> <span class="title">Zeros e a Forma Canônica</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-5.html#minimal-5-2-2" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Valor Numérico da Função</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-5.html#minimal-5-2-3" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Encontrando os Zeros da Função Quadrática Resolvendo a Equação Quadrática</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="minimal-5.html#minimal-5-3" class="internal"><span class="codenumber">3.2</span> <span class="title">Calcular zeros da função utilizando a forma padrão</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-5.html#minimal-5-3-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Função Quadrática Incompleta</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-5.html#minimal-5-3-4" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Função Quadrática Completa</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-5.html#minimal-5-4" class="internal"><span class="codenumber">3.3</span> <span class="title">Zero da função quadrática nos gráficos</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-5.html#minimal-5-5" class="internal"><span class="codenumber">3.4</span> <span class="title">Discriminante</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-5.html#minimal-5-6" class="internal"><span class="codenumber">3.5</span> <span class="title">Estudo dos Sinais da Função Quadrática</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-5.html#minimal-5-7" class="internal"><span class="codenumber">3.6</span> <span class="title">Inequações Quadráticas</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-5.html#minimal-5-8" class="internal"><span class="codenumber">3.7</span> <span class="title">Máximos e Mínimos da Função Quadrática</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="minimal-5.html#minimal-5-9" class="internal"><span class="codenumber">3.8</span> <span class="title">Exercícios</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="referencias.html" class="internal"><span class="codenumber">4</span> <span class="title">Referências</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="minimal-4"><h2 class="heading hide-type">
+<span class="type">Seção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Gráfico de Funções Quadráticas</span>
+</h2>
+<section class="subsection" id="minimal-4-2"><h3 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Função Quadrática do tipo <span class="process-math">\(y=ax^2\)</span></span>
+</h3>
+<div class="para" id="minimal-4-2-2"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div>
+<div class="para" id="minimal-4-2-3">O gráfico de uma função quadrática é uma curva chamada <em class="alert">Parábola</em>, cuja concavidade é determinada pelo valor do coeficiente a, obtendo um eixo de simetria, e que passa pelo seu ponto mais alto ou mais baixo, chamado vértice da parábola.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-2-4">Observe a imagem a seguir mostrando estes três elementos importantes para a análise do gráfico da função quadrática.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-2-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="minimal-4-2-5"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="treselementos.png" class="contained"></div>
+<figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Três elementos importantes das parábolas, gráfico da função quadrática<div class="autopermalink" data-description="Figura 2.1"><a href="#minimal-4-2-5" title="Copy heading and permalink for Figura 2.1" aria-label="Copy heading and permalink for Figura 2.1">🔗</a></div></figcaption></figure><div class="para" id="minimal-4-2-6">Faremos algumas simulações com um software matemático para tal percepção.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-2-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-2-7"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-2-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div>
+<iframe src="https://www.desmos.com/calculator/7iphdyinqf" id="minimal-4-2-8" width="600" height="600"></iframe><div class="para" id="minimal-4-2-9">Note que ao mexer no botão deslizante do aplicativo, cuja representação são valores do coeficiente a, notamos que:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-2-9" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ul class="disc" id="minimal-4-2-10">
+<li id="minimal-4-2-10-1">
+<div class="para" id="p-derived-minimal-4-2-10-1">Se o valor de a é positivo, ou seja, <span class="process-math">\(a&gt;0\text{,}\)</span> então a concavidade fica virada para cima</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-2-10-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-2-10-2">
+<div class="para" id="p-derived-minimal-4-2-10-2">Quanto maior o valor de a, mais fechada esta parábola fica. Quanto menor o valor e a, mais aberta ela será.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-2-10-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-2-10-3">
+<div class="para" id="p-derived-minimal-4-2-10-3">Se o valor de a é negativa, ou seja, <span class="process-math">\(a&lt;0\text{,}\)</span> então a concavidade fica virada para baixo</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-2-10-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-2-10-4">
+<div class="para" id="p-derived-minimal-4-2-10-4">Quanto menor o valor e a, mais fechada a parábola fica. Quanto maior o valor de a, mais aberta ela será.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-2-10-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-2-10-5">
+<div class="para" id="p-derived-minimal-4-2-10-5">Se a é nulo, ou seja <span class="process-math">\(a=0\text{,}\)</span> temos uma função constante passando por zero.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-2-10-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="minimal-4-2-11">Veja algumas imagens em que comparamos as funções, analisando o valor de a.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-2-11" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ul class="disc" id="minimal-4-2-12">
+<li id="minimal-4-2-12-1">
+<div class="para" id="p-derived-minimal-4-2-12-1">Quando a é positivo (<span class="process-math">\(a&gt;0\)</span>). <iframe src="https://www.desmos.com/calculator/retyq6ggwl" id="minimal-4-2-12-1-2" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-2-12-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-2-12-2">
+<div class="para" id="p-derived-minimal-4-2-12-2">Quando a é negativo (<span class="process-math">\(a&lt;0\)</span>). <iframe src="https://www.desmos.com/calculator/biyrgmvmfn" id="minimal-4-2-12-2-2" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-2-12-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="minimal-4-2-13">
+<em class="alert">Atividade</em><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-2-13" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="decimal" id="minimal-4-2-14">
+<li id="minimal-4-2-14-1">
+<div class="para" id="p-derived-minimal-4-2-14-1">Usando o botão deslizante que representa os valores do coeficiente <span class="process-math">\(a\text{,}\)</span> faça a parábola preta coincidir com a parábola vermelha. <iframe src="https://www.geogebra.org/material/iframe/id/typfstqw/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-2-14-1-2" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-2-14-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="minimal-4-2-14-2">
+<div class="para" id="p-derived-minimal-4-2-14-2">Usando o botão deslizante do coeficiente <span class="process-math">\(a\)</span> faça a parábola passar pelos 3 pontos A, B e C. Observe as coordenadas dos pontos e compare com o coeficiente da função quadrática. <iframe src="https://www.geogebra.org/material/iframe/id/g8nhvwxa/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-2-14-2-2" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#minimal-4-2-14-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="minimal-4-2-14-3">
+<div class="para" id="p-derived-minimal-4-2-14-3">Objetos próximos da Terra movem-se em trajetória parabólica pela ação da gravidade, cujo gráfico é de uma função é quadrática. Com isso, um homem que está treinando lançamentos com uma bola de futebol percebe este movimento parabólico. Com o auxílio do botão deslizante, encontre a parábola que mais se aproxima da trajetória da bola. <iframe src="https://www.geogebra.org/material/iframe/id/zkemqjdc/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-2-14-3-1" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#minimal-4-2-14-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subseção 2.1: Função Quadrática do tipo y=ax^2"><a href="#minimal-4-2" title="Copy heading and permalink for Subseção 2.1: Função Quadrática do tipo y=ax^2" aria-label="Copy heading and permalink for Subseção 2.1: Função Quadrática do tipo y=ax^2">🔗</a></div></section><section class="subsection" id="minimal-4-3"><h3 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Função do tipo <span class="process-math">\(y=ax^2+k\)</span></span>
+</h3>
+<div class="para" id="minimal-4-3-2">A função quadrática <span class="process-math">\(y=ax^2\)</span> é uma função que possui apenas um coeficiente multiplicando o termo <span class="process-math">\(x^2\text{,}\)</span> e é responsável por mudar a abertura da concavidade da parábola. Vamos inserir mais um parâmetro <span class="process-math">\(k\)</span> somando o termo <span class="process-math">\(ax^2\text{.}\)</span> Ou seja, analisaremos um gráfico interativo para a função <span class="process-math">\(y=ax^2+k\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-3-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-3-3"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-3-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div>
+<iframe src="https://www.desmos.com/calculator/5iivepwyxv" id="minimal-4-3-4" width="600" height="600"></iframe><div class="para" id="minimal-4-3-5">Note que ao aumentar ou diminuir os valor do parâmetro <span class="process-math">\(k\)</span> no gráfico interativo, o ponto mais alto ou mais baixo da parábola (vértice da parábola) é deslocada verticalmente no seu eixo de simetria. Para <span class="process-math">\(k&gt;0\)</span> temos que a parábola passa por valores positivos do eixo de simetria. Para <span class="process-math">\(k=0\)</span> temos que a parábola passa na origem do sistema cartesiano. E para <span class="process-math">\(k&lt;\)</span> temos que a parábola passa por valores negativos do eixo de simetria.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-3-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-3-6">Observe as funções no gráfico a seguir e compara os sinais dos parâmetros <span class="process-math">\(a\)</span> e <span class="process-math">\(k\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-3-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<iframe src="https://www.desmos.com/calculator/vx49zfblx8" id="minimal-4-3-7" width="600" height="600"></iframe><div class="para" id="minimal-4-3-8">Portanto, a função do tipo <span class="process-math">\(y=ax^2+k\)</span> é uma função quadrática cujos parâmetros reais <span class="process-math">\(a\)</span> e <span class="process-math">\(k\)</span> são responsáveis por alterar a concavidade da parábola e movê-la verticalmente em eixo de simetria, respectivamente.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-3-8" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-3-9">
+<em class="alert">Atividade</em><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-3-9" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="decimal" id="minimal-4-3-10">
+<li id="minimal-4-3-10-1">
+<div class="para" id="p-derived-minimal-4-3-10-1">Usando os botões deslizantes que representam os valores dos parâmetros <span class="process-math">\(a\)</span> e <span class="process-math">\(k\text{,}\)</span> faça que a parábola preta coincidir com a parábola verde. <iframe src="https://www.geogebra.org/material/iframe/id/wuzzdnpf/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-3-10-1-3" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-3-10-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="minimal-4-3-10-2">
+<div class="para" id="p-derived-minimal-4-3-10-2">Use o botão deslizantes do gráfico interativo e faça a parábola passar pelos três pontos. Observe as coordenadas de cada ponto e compare com os coeficientes da função quadrática. <iframe src="https://www.geogebra.org/material/iframe/id/fzesuedr/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-3-10-2-1" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#minimal-4-3-10-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="minimal-4-3-10-3">
+<div class="para" id="p-derived-minimal-4-3-10-3">Um canhão atira um projétil, desenhando uma trajetória parabólica, cujo gráfico pertence à função quadrática. Mexa nos botões deslizantes do gráfico interativo até que a parábola coincida com a trajetória do projétil. <iframe src="https://www.geogebra.org/material/iframe/id/nntgcjbg/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-3-10-3-1" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#minimal-4-3-10-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subseção 2.2: Função do tipo y=ax^2+k"><a href="#minimal-4-3" title="Copy heading and permalink for Subseção 2.2: Função do tipo y=ax^2+k" aria-label="Copy heading and permalink for Subseção 2.2: Função do tipo y=ax^2+k">🔗</a></div></section><section class="subsection" id="minimal-4-4"><h3 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Função Quadrática do tipo <span class="process-math">\(y=a(x-m)^2\)</span></span>
+</h3>
+<div class="para" id="minimal-4-4-2">Quando a função quadrática é do tipo <span class="process-math">\(f(x)=a(x-m)^2\)</span> notamos que o coeficiente <span class="process-math">\(a\)</span> está multiplicando o quadrado da diferença da variável x por um novo parâmetro que chamaremos de <span class="process-math">\(m\text{.}\)</span> Vamos observar no gráfico interativo o que acontece com a parábola quando mudamos o valor deste parâmetro.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-4-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-4-3"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-4-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div>
+<iframe src="https://www.desmos.com/calculator/vzirokf6fu" id="minimal-4-4-4" width="600" height="600"></iframe><div class="para" id="minimal-4-4-5">Este parâmetro <span class="process-math">\(m\)</span> desloca o eixo de simetria (onde está o vértice) da parábola horizontalmente, no sentido positivo ou negativo do eixo x. Ou seja, se <span class="process-math">\(m&gt;0\text{,}\)</span> então o eixo de simetria estará à direita do eixo y. Por outro lado, se <span class="process-math">\(m&lt;0\text{,}\)</span> então o eixo de simetria estará à esquerda do eixo eixo y. E se <span class="process-math">\(m=0\text{,}\)</span> então o eixo de simetria coincide com o eixo y. Veja uma imagem ilustrativa.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-4-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<iframe src="https://www.desmos.com/calculator/vrfdhns9uw" id="minimal-4-4-6" width="600" height="600"></iframe><div class="para" id="minimal-4-4-7">Note que <span class="process-math">\(y=2(x-2)^2\)</span> possui a=1 e m=2,fazendo com que o eixo de simetria da parábola esteja coincidindo com a reta x=2.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-4-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-4-8">Analogamente, em <span class="process-math">\(y=2(x-0)^2\)</span> que também pode ser escrito como <span class="process-math">\(y=2x^2\text{,}\)</span> possui o eixo de simetria da parábola coincidindo com a reta x=0.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-4-8" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-4-9">E a função <span class="process-math">\(y=2(x-(-2))^2\)</span> que também pode ser escrito como <span class="process-math">\(y=2(x+2)^2\text{,}\)</span> possui o seu eixo de simetria coincidindo com a reta x=-2.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-4-9" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-4-10">Portanto, o parâmetro m é reponsável por deslocar a parábola <em class="alert">horizontalmente</em>.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-4-10" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-4-11">
+<em class="alert">Atividade</em><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-4-11" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-4-12">
+<ol class="decimal" id="minimal-4-4-12-1">
+<li id="minimal-4-4-12-1-1">
+<div class="para" id="p-derived-minimal-4-4-12-1-1">Utilize os botões delizantes para coincidir as parábolas. <iframe src="https://www.geogebra.org/material/iframe/id/pycmjguc/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-4-12-1-1-1" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-4-12-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="minimal-4-4-12-1-2">
+<div class="para" id="p-derived-minimal-4-4-12-1-2">Dados os pontos A, B e C do gráfico interativo, use os botões deslizantes dos parâmetros <span class="process-math">\(a\)</span> e <span class="process-math">\(m\text{,}\)</span> e encontre uma parábola que passe por esses pontos. <iframe src="https://www.geogebra.org/material/iframe/id/nzh9eftz/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-4-12-1-2-3" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#minimal-4-4-12-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="minimal-4-4-12-1-3">
+<div class="para" id="p-derived-minimal-4-4-12-1-3">Observe o desenho no gráfico interativo e trace uma parábola que coincida com a trajetória do salto do atleta. <iframe src="https://www.geogebra.org/material/iframe/id/gkeg9swx/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-4-12-1-3-1" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#minimal-4-4-12-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-4-12" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subseção 2.3: Função Quadrática do tipo y=a(x-m)^2"><a href="#minimal-4-4" title="Copy heading and permalink for Subseção 2.3: Função Quadrática do tipo y=a(x-m)^2" aria-label="Copy heading and permalink for Subseção 2.3: Função Quadrática do tipo y=a(x-m)^2">🔗</a></div></section><section class="subsection" id="minimal-4-5"><h3 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Função Quadrática do tipo <span class="process-math">\(y=a(x-m)^2+k\)</span></span>
+</h3>
+<div class="para" id="minimal-4-5-2">Dizemos que uma função quadrática desse tipo está na forma canônica. Relembrando das funções quadráticas anteriores, os parâmetros <em class="alert">a</em> e <em class="alert">m</em> são responsáveis pelo sentido da concavidade da parábola e pelo seu deslocamento horizontal, respectivamente. Vamos inserir um terceiro parâmetro, um valor real k, responsável pelo deslocamento vertical da parábola. Teste estes valores no gráfico interativo a seguir.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-5-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<iframe src="https://www.desmos.com/calculator/wps56o3rrq" id="minimal-4-5-3" width="600" height="600"></iframe><div class="para" id="minimal-4-5-4"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-5-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div>
+<div class="para" id="minimal-4-5-5">Analisando três casos para o valor de k, ou seja, k=-2, k=0 e k=2, vamos observar graficamente o que acontece com a parábola no plano cartesiano.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-5-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-5-6"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-5-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div>
+<iframe src="https://www.desmos.com/calculator/ncs2oka3vg" id="minimal-4-5-7" width="600" height="600"></iframe><div class="para" id="minimal-4-5-8">Após análise dos parâmetros <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(m\)</span> e <span class="process-math">\(k\text{,}\)</span> faremos algumas atividades para compreender e assimilar melhor o conteúdo.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-5-8" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-5-9">
+<em class="alert">Atividades</em><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-5-9" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-5-10">
+<ol class="decimal" id="minimal-4-5-10-1">
+<li id="minimal-4-5-10-1-1">
+<div class="para" id="p-derived-minimal-4-5-10-1-1">Use os botões deslizantes do gráfico para coincidir as parábolas. <iframe src="https://www.geogebra.org/material/iframe/id/mpcpuhzm/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-5-10-1-1-1" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-5-10-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="minimal-4-5-10-1-2">
+<div class="para" id="p-derived-minimal-4-5-10-1-2">Dados os três pontos A, B e C no gráfico interativo, altere os parâmetros <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(m\)</span> e <span class="process-math">\(k\text{,}\)</span> de modo que a parábola passe pelos pontos determinados. <iframe src="https://www.geogebra.org/material/iframe/id/bgnjw65b/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-5-10-1-2-4" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#minimal-4-5-10-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="minimal-4-5-10-1-3">Observe os pontos P, Q, R e S. Um atleta em treinamento deseja acertar esses pontos e para cada um deles, uma trajetória será feita pelo dardo atirado. Preencha a tabela informando quais valores de <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(m\)</span> e <span class="process-math">\(k\text{,}\)</span> a parábola acerta cada um dos pontos apresentados. <figure class="table table-like" id="minimal-4-5-10-1-3-4"><figcaption><span class="type">Tabela</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Valor dos parâmetros <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(m\)</span> e <span class="process-math">\(k\text{,}\)</span> dependendo da localização dos pontos P, Q, R e S.<div class="autopermalink" data-description="Tabela 2.2: Valor dos parâmetros a m e k dependendo da localização dos pontos P, Q, R e S."><a href="#minimal-4-5-10-1-3-4" title="Copy heading and permalink for Tabela 2.2: Valor dos parâmetros a m e k dependendo da localização dos pontos P, Q, R e S." aria-label="Copy heading and permalink for Tabela 2.2: Valor dos parâmetros a m e k dependendo da localização dos pontos P, Q, R e S.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r1 l1 t1 lines">Ponto</td>
+<td class="l m b1 r1 l0 t1 lines"><span class="process-math">\(a\)</span></td>
+<td class="l m b1 r1 l0 t1 lines"><span class="process-math">\(m\)</span></td>
+<td class="l m b1 r1 l0 t1 lines"><span class="process-math">\(k\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">P</td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Q</td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">R</td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">S</td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+<td class="l m b1 r1 l0 t0 lines"><code class="code-inline tex2jax_ignore"></code></td>
+</tr>
+</table></div></figure> <iframe src="https://www.geogebra.org/material/iframe/id/rrmmjfmp/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-5-10-1-3-5" width="600" height="600"></iframe><div class="autopermalink" data-description="Item 3"><a href="#minimal-4-5-10-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-5-10" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subseção 2.4: Função Quadrática do tipo y=a(x-m)^2+k"><a href="#minimal-4-5" title="Copy heading and permalink for Subseção 2.4: Função Quadrática do tipo y=a(x-m)^2+k" aria-label="Copy heading and permalink for Subseção 2.4: Função Quadrática do tipo y=a(x-m)^2+k">🔗</a></div></section><section class="subsection" id="minimal-4-6"><h3 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Escrevendo a Função Quadrática na Forma Canônica</span>
+</h3>
+<div class="para" id="minimal-4-6-2">A função quadrática pode ser escrita de duas formas: na forma padrão, <span class="process-math">\(f(x)=ax^2+bx+c\)</span> e na forma canônica <span class="process-math">\(f(x)=a(x-m)^2+k\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-3">Contudo, podemos tomar uma função quadrática que está na forma padrão e escrevê-la na forma quadrática e vice-versa. Veja no teorema a seguir como fazer esta transição entre as duas formas de escrever a função quadrática.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-4">
+<article class="theorem theorem-like" id="minimal-4-6-4-1"><h4 class="heading">
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Função Quadrática da Forma Padrão para a Forma Canônica.</span>
+</h4>
+<div class="para" id="minimal-4-6-4-1-2-1">Toda função quadrática escrita na forma <span class="process-math">\(f(x)=ax^2+bx+c\)</span> pode ser reescrita na forma <span class="process-math">\(f(x)=a(x-m)^2+k\text{,}\)</span> com <span class="process-math">\(m=-\dfrac{b}{2a}\)</span> e <span class="process-math">\(k=\dfrac{4ac-b²}{4a}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-4-1-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Teorema 2.3: Função Quadrática da Forma Padrão para a Forma Canônica"><a href="#minimal-4-6-4-1" title="Copy heading and permalink for Teorema 2.3: Função Quadrática da Forma Padrão para a Forma Canônica" aria-label="Copy heading and permalink for Teorema 2.3: Função Quadrática da Forma Padrão para a Forma Canônica">🔗</a></div></article><details id="minimal-4-6-4-1-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Demonstração<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><span class="process-math">\(a\)</span><div class="displaymath process-math" id="minimal-4-6-4-1-3-2">
+\begin{equation*}
+f(x)=a\cdot\left[x^2+\dfrac{b}{a}x+\dfrac{c}{a}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-6-4-1-3-3">
+\begin{equation*}
+f(x)=a\cdot\left[\left(x^2+\dfrac{b}{a}x+\dfrac{b^2}{4a^2}-\dfrac{b^2}{4a^2}+\dfrac{c}{a}\right)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-6-4-1-3-4">
+\begin{equation*}
+f(x)=a\cdot\left[\left(x^2+\dfrac{b}{a}x+\dfrac{b^2}{4a^2}\right)+\dfrac{c}{a}-\dfrac{b^2}{4a^2}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-6-4-1-3-5">
+\begin{equation*}
+f(x)=a\cdot\left[\left(x+\dfrac{b}{2a}\right)^2+\dfrac{c}{a}-\dfrac{b^2}{4a^2}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-6-4-1-3-6">
+\begin{equation*}
+f(x)=a\cdot\left[\left(x+\dfrac{b}{2a}\right)^2+\dfrac{4ac-b^2}{4a^2}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-6-4-1-3-7">
+\begin{equation*}
+f(x)=a\cdot\left(x+\dfrac{b}{2a}\right)^2+\dfrac{4ac-b^2}{4a}\text{,}
+\end{equation*}
+</div>
+<div class="para" id="minimal-4-6-4-1-3-8">Comparando as funções escritas acima <span class="process-math">\(f(x)=a(x-m)^2+k\)</span> e <span class="process-math">\(f(x)=a\cdot\left(x+\dfrac{b}{2a}\right)^2+\dfrac{4ac-b^2}{4a}\)</span> temos que <span class="process-math">\(m=-\dfrac{b}{2a}\)</span> e <span class="process-math">\(k=\dfrac{4ac-b^2}{4a}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-4-1-3-8" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Demonstração 2.3.1"><a href="#minimal-4-6-4-1-3" title="Copy heading and permalink for Demonstração 2.3.1" aria-label="Copy heading and permalink for Demonstração 2.3.1">🔗</a></div></article></details><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-5">Para a constante <span class="process-math">\(k\text{,}\)</span> chamaremos a constante <span class="process-math">\(b^2-4ac\)</span> de discriminante e denotaremos como <span class="process-math">\(\Delta\text{,}\)</span> de modo que <span class="process-math">\(k=-\dfrac{\Delta}{4a}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-6">
+<em class="alert">Veja alguns exemplos:</em><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-6-7">
+<ol class="decimal" id="minimal-4-6-7-1"><li id="minimal-4-6-7-1-1">
+<div class="para" id="minimal-4-6-7-1-1-1">Escreva as funções a seguir na forma canônica e identifique qual dos gráficos representa a lei de formação encontrada.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-6-7-1-1-2">
+<li id="minimal-4-6-7-1-1-2-1">
+<span class="process-math">\(f(x)=x^2-4x+3\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="GRAFICOS.png" class="contained"></div> <details id="minimal-4-6-7-1-1-2-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(a=1\text{,}\)</span><span class="process-math">\(b=-4\)</span><span class="process-math">\(c=3\text{,}\)</span><div class="para" id="minimal-4-6-7-1-1-2-1-3-4">
+<span class="process-math">\(m=-\dfrac{b}{2a}=-\dfrac{-4}{2\cdot1}=2\)</span> e<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-1-3-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-7-1-1-2-1-3-5">
+<span class="process-math">\(k=-\dfrac{\Delta}{4a}=-\dfrac{(-4)^2-4\cdot1\cdot3}{4\cdot1}=-1\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-1-3-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-7-1-1-2-1-3-6">Portanto, <span class="process-math">\(f(x)=(x-2)^2-1\)</span> cuja paŕabola está representada no Gráfico 3.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-1-3-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 1.a.1"><a href="#minimal-4-6-7-1-1-2-1-3" title="Copy heading and permalink for Solução 1.a.1" aria-label="Copy heading and permalink for Solução 1.a.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item 1.a"><a href="#minimal-4-6-7-1-1-2-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="minimal-4-6-7-1-1-2-2">
+<span class="process-math">\(f(x)=-x^2+5x-6\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="GRAFICOS.png" class="contained"></div> <details id="minimal-4-6-7-1-1-2-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(a=-1\text{,}\)</span><span class="process-math">\(b=5\)</span><span class="process-math">\(c=-6\text{,}\)</span><div class="para" id="minimal-4-6-7-1-1-2-2-3-4">
+<span class="process-math">\(m=-\dfrac{b}{2a}=-\dfrac{5}{2\cdot(-1)}=\dfrac{5}{2}\)</span> e<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-2-3-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-7-1-1-2-2-3-5">
+<span class="process-math">\(k=-\dfrac{\Delta}{4a}=-\dfrac{(5)^2-4\cdot(-1)\cdot(-6)}{4\cdot(-1)}=\dfrac{1}{4}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-2-3-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-7-1-1-2-2-3-6">Portanto, <span class="process-math">\(f(x)=-\left(x-\dfrac{5}{2}\right)^2+\dfrac{1}{4}\)</span> cuja paŕabola está representada no Gráfico 4.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-2-3-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 1.b.1"><a href="#minimal-4-6-7-1-1-2-2-3" title="Copy heading and permalink for Solução 1.b.1" aria-label="Copy heading and permalink for Solução 1.b.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item 1.b"><a href="#minimal-4-6-7-1-1-2-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="minimal-4-6-7-1-1-2-4">
+<span class="process-math">\(f(x)=5x^2-25\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="GRAFICOS.png" class="contained"></div> <details id="minimal-4-6-7-1-1-2-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(a=5\text{,}\)</span><span class="process-math">\(b=0\)</span><span class="process-math">\(c=-25\text{,}\)</span><div class="para" id="minimal-4-6-7-1-1-2-4-3-4">
+<span class="process-math">\(m=-\dfrac{b}{2a}=-\dfrac{0}{2\cdot(5)}=0\)</span> e<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-4-3-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-7-1-1-2-4-3-5">
+<span class="process-math">\(k=-\dfrac{\Delta}{4a}=-\dfrac{(0)^2-4\cdot(5)\cdot(-25)}{4\cdot(5)}=25\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-4-3-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-7-1-1-2-4-3-6">Portanto, <span class="process-math">\(f(x)=5(x-0)^2+25\)</span> cuja paŕabola está representada no Gráfico 2.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-4-3-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 1.c.1"><a href="#minimal-4-6-7-1-1-2-4-3" title="Copy heading and permalink for Solução 1.c.1" aria-label="Copy heading and permalink for Solução 1.c.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item 1.c"><a href="#minimal-4-6-7-1-1-2-4" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+<li id="minimal-4-6-7-1-1-2-5">
+<span class="process-math">\(f(x)=\dfrac{x^2}{2}-4x\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="GRAFICOS.png" class="contained"></div> <details id="minimal-4-6-7-1-1-2-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(a=\dfrac{1}{2}\text{,}\)</span><span class="process-math">\(b=-4\)</span><span class="process-math">\(c=0\text{,}\)</span><div class="para" id="minimal-4-6-7-1-1-2-5-3-4">
+<span class="process-math">\(m=-\dfrac{b}{2a}=-\dfrac{-4}{2\cdot\dfrac{1}{2}}=4\)</span> e<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-5-3-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-7-1-1-2-5-3-5">
+<span class="process-math">\(k=-\dfrac{\Delta}{4a}=-\dfrac{(-4)^2-4\cdot\left(\dfrac{1}{2}\right)\cdot0}{4\cdot\dfrac{1}{2}}=-8\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-5-3-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-7-1-1-2-5-3-6">Portanto, <span class="process-math">\(f(x)=\dfrac{1}{2}(x-4)^2-8\)</span> cuja paŕabola está representada no Gráfico 1.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7-1-1-2-5-3-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 1.d.1"><a href="#minimal-4-6-7-1-1-2-5-3" title="Copy heading and permalink for Solução 1.d.1" aria-label="Copy heading and permalink for Solução 1.d.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item 1.d"><a href="#minimal-4-6-7-1-1-2-5" title="Copy heading and permalink for Item 1.d" aria-label="Copy heading and permalink for Item 1.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-6-7-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li></ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<section class="subsection" id="minimal-4-6-8"><h4 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vértice da Parábola</span>
+</h4>
+<div class="para" id="minimal-4-6-8-2">A parábola é a curva desenhada pelo gráfico da função quadrática e seu vértice é, o seu ponto de mínimo se a parábola for virada para cima ou o ponto de máximo de a parábola for virada para baixo, indenpendente de qual forma ela está escrita, seja a padrão ou a canônica. Como já sabemos escrever uma função na forma canônica, observaremos facilmente o vértice dela quando usamos um software gráfico para desenhar as parábolas.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-8-3">Quais as coodenadas do vértce da parábola definida pela equação <span class="process-math">\(f(x)=(x-2)^2+3\text{?}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-8-4">Na função <span class="process-math">\(f(x)=(x-2)^2+3\)</span> os valores de <span class="process-math">\(m=2\)</span> e <span class="process-math">\(k=3\)</span> representam as coordenadas do ponto de mínimo da parábola, ou seja, <span class="process-math">\(V=(m,k)=(2,3)\text{.}\)</span> E como já sabemos, <span class="process-math">\(m\)</span> representa a equação do eixo de simetria da parábola. Ou seja, nessa função, <span class="process-math">\(x=2\)</span> representa a lei de formação do eixo de simetria da parábola.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="Exemplo.png" class="contained"></div>
+<div class="para" id="minimal-4-6-8-6">Quais as coodenadas do vértce da parábola definida pela equação <span class="process-math">\(f(x)=-x^2-6x-8\text{?}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-6-8-7">
+<div class="para">Note que a função está escrita na forma <span class="process-math">\(f(x)=-x^2-6x-8\text{.}\)</span> Podemos escrever a função na forma canônica e em seguida analisar os valores de <span class="process-math">\(m\)</span> e <span class="process-math">\(k\text{.}\)</span> Logo,</div>
+<div class="displaymath process-math" id="minimal-4-6-8-7-4">
+\begin{equation*}
+f(x)=-x^2-6x-9+1
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-6-8-7-5">
+\begin{equation*}
+f(x)=-(x^2+6x+9)+1
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-6-8-7-6">
+\begin{equation*}
+f(x)=-(x+3)^2+1
+\end{equation*}
+</div>
+<div class="para">Assim, o vértice tem coordenadas <span class="process-math">\(V=(m,k)=(-3,1)\text{,}\)</span> localizado no eixo de simetria de equação <span class="process-math">\(x=-3\)</span> e a concavidade virada para baixo deve-se ao fato de <span class="process-math">\(a=-1\text{,}\)</span> valor positivo.</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="Exemplo5.png" class="contained"></div>
+<em class="alert">Atividades</em><div class="para" id="minimal-4-6-8-10">Determine o vértice das funções quadráticas<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-10" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-6-8-11">
+<li id="minimal-4-6-8-11-1">
+<div class="para" id="minimal-4-6-8-11-1-1">
+<span class="process-math">\(\displaystyle f(x)=2(x+1)^2-\dfrac{1}{2}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-11-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<details id="minimal-4-6-8-11-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="Exemplo6.png" class="contained"></div>
+<div class="para" id="minimal-4-6-8-11-1-2-2">Note que o vértice tem coordenadas <span class="process-math">\(V=(m,k)=\left(-1,-\dfrac{1}{2}\right)\text{,}\)</span> localizado no eixo de simetria de equação <span class="process-math">\(x=-1\)</span> e a concavidade virada para baixo deve-se ao fato de <span class="process-math">\(a=2\text{,}\)</span> valor positivo.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-11-1-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução a.1"><a href="#minimal-4-6-8-11-1-2" title="Copy heading and permalink for Solução a.1" aria-label="Copy heading and permalink for Solução a.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item a"><a href="#minimal-4-6-8-11-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="minimal-4-6-8-11-2">
+<div class="para" id="minimal-4-6-8-11-2-1">
+<span class="process-math">\(\displaystyle f(x)=x^2-1\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-11-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<details id="minimal-4-6-8-11-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(V=(m,k)=(0,-1)\text{,}\)</span><span class="process-math">\(x=0\)</span><span class="process-math">\(a=1\text{,}\)</span><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="Exemplo1.png" class="contained"></div>
+<div class="autopermalink" data-description="Solução b.1"><a href="#minimal-4-6-8-11-2-2" title="Copy heading and permalink for Solução b.1" aria-label="Copy heading and permalink for Solução b.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item b"><a href="#minimal-4-6-8-11-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="minimal-4-6-8-11-3">
+<div class="para" id="minimal-4-6-8-11-3-1">
+<span class="process-math">\(\displaystyle f(x)=-x^2+3x+2\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-11-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<details id="minimal-4-6-8-11-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="minimal-4-6-8-11-3-2-1">
+<div class="para">Vamos escrever a função da forma padrão para a forma canônica.</div>
+<div class="displaymath process-math" id="minimal-4-6-8-11-3-2-1-1">
+\begin{equation*}
+f(x)=-x^2+3x+2
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-6-8-11-3-2-1-2">
+\begin{equation*}
+f(x)=-1\cdot \left(x-\dfrac{-b}{2a}\right)^2+\dfrac{4ac-b^2}{4a}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-6-8-11-3-2-1-3">
+\begin{equation*}
+f(x)=-1\cdot \left(x-\dfrac{-3}{2\cdot(-1)}\right)^2+\dfrac{4\cdot(-1)\cdot(-2)-3^2}{4\cdot(-1)}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-6-8-11-3-2-1-4">
+\begin{equation*}
+f(x)=-\left(x-\dfrac{3}{2}\right)^2+\dfrac{1}{4}
+\end{equation*}
+</div>
+<div class="para">Temos então o vértice da função cujas coordenadas são <span class="process-math">\(V=\left(\dfrac{3}{2},\dfrac{1}{4}\right)\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="Exemplo7.png" class="contained"></div>
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-8-11-3-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução c.1"><a href="#minimal-4-6-8-11-3-2" title="Copy heading and permalink for Solução c.1" aria-label="Copy heading and permalink for Solução c.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item c"><a href="#minimal-4-6-8-11-3" title="Copy heading and permalink for Item c" aria-label="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subseção 2.5.1: Vértice da Parábola"><a href="#minimal-4-6-8" title="Copy heading and permalink for Subseção 2.5.1: Vértice da Parábola" aria-label="Copy heading and permalink for Subseção 2.5.1: Vértice da Parábola">🔗</a></div></section><section class="subsection" id="minimal-4-6-9"><h4 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Domínio e Imagem da Função Quadrática</span>
+</h4>
+<div class="para" id="minimal-4-6-9-2">Após determinarmos o vértice de uma parábola, podemos analisar o domínio e a imagem de uma função quadrática. A seguir, observe a linha vermelha, que mostra os valores de y que podem ser obtidos quando alteramos os valores de <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(m\)</span> e <span class="process-math">\(k\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-9-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-9-3">
+<iframe src="https://www.geogebra.org/material/iframe/id/wwcuge3u/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-6-9-3-1" width="600" height="600"></iframe><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-9-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-6-9-4">Seja <span class="process-math">\(f:\mathbb{R}\rightarrow\mathbb{R}\)</span> uma função quadrática definida pela lei de formação <span class="process-math">\(f(x)=a(x-m)^2+k\text{,}\)</span> onde <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(m\)</span> e <span class="process-math">\(k\)</span> são valores reais definidos por <span class="process-math">\(m=-\dfrac{b}{2a}\)</span> e <span class="process-math">\(k=\dfrac{4ac-b^2}{4a}\text{,}\)</span> define-se que o <em class="alert">Domínio</em> da função quadrática, que contém todos os valores de x para os quais a expressão <span class="process-math">\(f(x)=a(x-m)^2+k\)</span> faz sentido, denotado por <span class="process-math">\(D(f)\text{,}\)</span> ou seja, <span class="process-math">\(D(f)=\mathbb{R}\text{.}\)</span> Por outro lado, a <em class="alert">Imagem</em> de uma função quadrática, denotada por <span class="process-math">\(Im(f)\text{,}\)</span> dependerá do valor do vértice da parábola, já que a função não é definida em todo eixo y. Vejamos alguns exemplos:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-9-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-6-9-5">
+<ol class="decimal" id="minimal-4-6-9-5-1"><li id="minimal-4-6-9-5-1-1">
+<div class="para" id="minimal-4-6-9-5-1-1-1">Determine o domínio e a imagem das funções quadráticas:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-9-5-1-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-6-9-5-1-1-2">
+<li id="minimal-4-6-9-5-1-1-2-1">
+<div class="para" id="p-derived-minimal-4-6-9-5-1-1-2-1">
+<span class="process-math">\(y=2(x-3)^2-4\)</span> <details id="minimal-4-6-9-5-1-1-2-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\((3,-4)\)</span><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="im1.png" class="contained"></div>
+<span class="process-math">\(D(f)=\mathbb{R}\)</span><span class="process-math">\(Im(f)=\{y\in\mathbb{R}/y\geq-4\}.\)</span><div class="autopermalink" data-description="Solução 1.a.1"><a href="#minimal-4-6-9-5-1-1-2-1-2" title="Copy heading and permalink for Solução 1.a.1" aria-label="Copy heading and permalink for Solução 1.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#minimal-4-6-9-5-1-1-2-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="minimal-4-6-9-5-1-1-2-2">
+<div class="para" id="p-derived-minimal-4-6-9-5-1-1-2-2">
+<span class="process-math">\(y=-(x+1)^2+2\)</span> <details id="minimal-4-6-9-5-1-1-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\((-1,2)\)</span><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="im2.png" class="contained"></div>
+<span class="process-math">\(D(f)=\mathbb{R}\)</span><span class="process-math">\(Im(f)=\{y\in\mathbb{R}/y\leq2\}.\)</span><div class="autopermalink" data-description="Solução 1.b.1"><a href="#minimal-4-6-9-5-1-1-2-2-2" title="Copy heading and permalink for Solução 1.b.1" aria-label="Copy heading and permalink for Solução 1.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#minimal-4-6-9-5-1-1-2-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="minimal-4-6-9-5-1-1-2-3">
+<div class="para" id="p-derived-minimal-4-6-9-5-1-1-2-3">
+<span class="process-math">\(y=x^2\)</span> <details id="minimal-4-6-9-5-1-1-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\((0,0)\)</span><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="im3.png" class="contained"></div>
+<span class="process-math">\(D(f)=\mathbb{R}\)</span><span class="process-math">\(Im(f)=\{y\in\mathbb{R}/y\geq0\}.\)</span><div class="autopermalink" data-description="Solução 1.c.1"><a href="#minimal-4-6-9-5-1-1-2-3-2" title="Copy heading and permalink for Solução 1.c.1" aria-label="Copy heading and permalink for Solução 1.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#minimal-4-6-9-5-1-1-2-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+<li id="minimal-4-6-9-5-1-1-2-4">
+<div class="para" id="p-derived-minimal-4-6-9-5-1-1-2-4">
+<span class="process-math">\(y=-x^2-3\)</span> <details id="minimal-4-6-9-5-1-1-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\((0,-3)\)</span><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="im4.png" class="contained"></div>
+<span class="process-math">\(D(f)=\mathbb{R}\)</span><span class="process-math">\(Im(f)=\{y\in\mathbb{R}/y\leq-3\}.\)</span><div class="autopermalink" data-description="Solução 1.d.1"><a href="#minimal-4-6-9-5-1-1-2-4-2" title="Copy heading and permalink for Solução 1.d.1" aria-label="Copy heading and permalink for Solução 1.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 1.d"><a href="#minimal-4-6-9-5-1-1-2-4" title="Copy heading and permalink for Item 1.d" aria-label="Copy heading and permalink for Item 1.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-6-9-5-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li></ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-6-9-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subseção 2.5.2: Domínio e Imagem da Função Quadrática"><a href="#minimal-4-6-9" title="Copy heading and permalink for Subseção 2.5.2: Domínio e Imagem da Função Quadrática" aria-label="Copy heading and permalink for Subseção 2.5.2: Domínio e Imagem da Função Quadrática">🔗</a></div></section><div class="autopermalink" data-description="Subseção 2.5: Escrevendo a Função Quadrática na Forma Canônica"><a href="#minimal-4-6" title="Copy heading and permalink for Subseção 2.5: Escrevendo a Função Quadrática na Forma Canônica" aria-label="Copy heading and permalink for Subseção 2.5: Escrevendo a Função Quadrática na Forma Canônica">🔗</a></div></section><section class="subsection" id="minimal-4-7"><h3 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Escrevendo a Função Quadrática na Forma Padrão</span>
+</h3>
+<div class="para" id="minimal-4-7-2">Na subseção anterior, passamos uma função quadrática da forma padrão para a forma canônica. Agora, veremos como fazer o inverso, ou seja, passar a função quadrática escrita na forma canônica para a forma padrão.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-3">Seja f uma função quadrática na forma <span class="process-math">\(f(x)=a(x-m)^2+k\text{,}\)</span> com <span class="process-math">\(a\text{,}\)</span><span class="process-math">\(m\text{,}\)</span> <span class="process-math">\(k\)</span> <span class="process-math">\(\in\mathbb{R}\text{,}\)</span> abriremos o produto da diferença primeiro. Logo,<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="minimal-4-7-4">
+\begin{align*}
+f(x)\amp =a\cdot(x^2-2mx+m^2)+k\\
+\amp =ax^2-2amx+am^2+k\\
+\amp =ax^2+(-2am)x+(am^2+k)
+\end{align*}
+</div>
+<div class="para" id="minimal-4-7-5">Portanto, segue que os coeficientes da forma padrão são <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b=-2am\)</span> e <span class="process-math">\(c=am^2+k\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-6">Note que não é muito complexo abrir o produto notável e muitas vezes poderemos optar por este método para resolver alguns exercícios em vez de decorar mais fórmulas para determinar coeficientes da forma padrão.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-7">Veja o exemplo a seguir, onde transformamos a função quadrática da forma canônica para a forma padrão.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-8">
+<em class="alert">Exemplo:</em><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-8" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-7-9">
+<ol class="decimal" id="minimal-4-7-9-1"><li id="minimal-4-7-9-1-1">
+<div class="para" id="minimal-4-7-9-1-1-1">Escreva a função a seguir na forma padrão:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-9-1-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-7-9-1-1-2"><li id="minimal-4-7-9-1-1-2-1">
+<div class="para" id="p-derived-minimal-4-7-9-1-1-2-1">
+<span class="process-math">\(f(x)=(x-2)^2-1\)</span> <details id="minimal-4-7-9-1-1-2-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-7-9-1-1-2-1-2-1">Abrindo o produto notável:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-9-1-1-2-1-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-9-1-1-2-1-2-2">
+<span class="process-math">\(f(x)=x^2 -2\cdot x \cdot2 + 2^2 - 1 = x^2-4x+3\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-9-1-1-2-1-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-9-1-1-2-1-2-3">Portanto, <span class="process-math">\(f(x)=x^2-4x+3\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-9-1-1-2-1-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-9-1-1-2-1-2-4"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-9-1-1-2-1-2-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div>
+<div class="para" id="minimal-4-7-9-1-1-2-1-2-5">Usando <span class="process-math">\(f(x)=ax^2-2amx+am^2+k\text{,}\)</span> temos que <span class="process-math">\(a=1\text{,}\)</span> <span class="process-math">\(m=2\)</span> e <span class="process-math">\(k=-1\text{.}\)</span>  Logo<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-9-1-1-2-1-2-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-9-1-1-2-1-2-6">
+<span class="process-math">\(f(x)=1\cdot x^2-2\cdot1\cdot2\cdot x+1\cdot2^2+(-1)\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-9-1-1-2-1-2-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-9-1-1-2-1-2-7">Portanto, <span class="process-math">\(f(x)=f(x)=x^2-4x+3\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-9-1-1-2-1-2-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 1.a.1"><a href="#minimal-4-7-9-1-1-2-1-2" title="Copy heading and permalink for Solução 1.a.1" aria-label="Copy heading and permalink for Solução 1.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#minimal-4-7-9-1-1-2-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li></ol>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-7-9-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li></ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-9" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-10">
+<em class="alert">Atividade</em><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-10" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="decimal" id="minimal-4-7-11"><li id="minimal-4-7-11-1">
+<div class="para" id="minimal-4-7-11-1-1">Escreva as funções a seguir na forma padrão:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-7-11-1-2">
+<li id="minimal-4-7-11-1-2-1">
+<div class="para" id="p-derived-minimal-4-7-11-1-2-1">
+<span class="process-math">\(f(x)=-\left(x-\dfrac{5}{2}\right)^2+\dfrac{1}{4}\)</span> <details id="minimal-4-7-11-1-2-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-7-11-1-2-1-2-1">
+<span class="process-math">\(f(x)=-x^2+2\cdot x\cdot \dfrac{5}{2}-\left(\dfrac{5}{2}\right)^2+\dfrac{1}{4}=-x^2+5x-6\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-1-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-11-1-2-1-2-2">Portanto, <span class="process-math">\(f(x)=-x^2+5x-6\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-1-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-11-1-2-1-2-3"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-1-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div>
+<div class="para" id="minimal-4-7-11-1-2-1-2-4">Usando <span class="process-math">\(f(x)=ax^2-2amx+am^2+k\text{,}\)</span> temos que <span class="process-math">\(a=-1\text{,}\)</span> <span class="process-math">\(m=\dfrac{5}{2}\)</span> e <span class="process-math">\(k=\dfrac{1}{4}\text{.}\)</span>  Logo<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-1-2-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-11-1-2-1-2-5">
+<span class="process-math">\(f(x)=-1\cdot x^2-2\cdot (-1)\cdot \dfrac{5}{2}\cdot x+ (-1)\cdot \left(\dfrac{5}{2}\right)^2+\dfrac{1}{4}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-1-2-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-11-1-2-1-2-6">Portanto, <span class="process-math">\(f(x)=-x^2+5x-6\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-1-2-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 1.a.1"><a href="#minimal-4-7-11-1-2-1-2" title="Copy heading and permalink for Solução 1.a.1" aria-label="Copy heading and permalink for Solução 1.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#minimal-4-7-11-1-2-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="minimal-4-7-11-1-2-2">
+<div class="para" id="p-derived-minimal-4-7-11-1-2-2">
+<span class="process-math">\(f(x)=\dfrac{1}{2}(x-4)^2-8\)</span> <details id="minimal-4-7-11-1-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-7-11-1-2-2-2-1">
+<span class="process-math">\(f(x)=\dfrac{1}{2}\cdot (x^2-2\cdot x\cdot4+4^2)-8
+=\dfrac{x^2}{2}-4x+8-8
+=\dfrac{x^2}{2}-4x\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-11-1-2-2-2-2">Portanto, <span class="process-math">\(f(x)=\dfrac{x^2}{2}-4x\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-2-2-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-11-1-2-2-2-3"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-2-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div>
+<div class="para" id="minimal-4-7-11-1-2-2-2-4">Usando <span class="process-math">\(f(x)=ax^2-2amx+am^2+k\text{,}\)</span> temos que <span class="process-math">\(a=\dfrac{1}{2}\text{,}\)</span> <span class="process-math">\(m=4\)</span> e <span class="process-math">\(k=-8\text{.}\)</span> Logo<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-2-2-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-11-1-2-2-2-5">
+<span class="process-math">\(f(x)=\dfrac{1}{2}\cdot x^2-2\cdot \dfrac{1}{2}\cdot 4\cdot x + \dfrac{1}{2}\cdot 4^2-8\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-2-2-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-7-11-1-2-2-2-6">Portanto, <span class="process-math">\(f(x)=\dfrac{x^2}{2}-4x\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-11-1-2-2-2-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 1.b.1"><a href="#minimal-4-7-11-1-2-2-2" title="Copy heading and permalink for Solução 1.b.1" aria-label="Copy heading and permalink for Solução 1.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#minimal-4-7-11-1-2-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-7-11-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li></ol>
+<section class="subsection" id="minimal-4-7-12"><h4 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Esboçando o Gráfico da Função Quadrática</span>
+</h4>
+<div class="para" id="minimal-4-7-12-2">Vamos construir o esboço de dois gráficos de função quadrática.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-12-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="decimal" id="minimal-4-7-12-3"><li id="minimal-4-7-12-3-1">
+<div class="para" id="minimal-4-7-12-3-1-1">Esboce o gráfico das funções quadráticas:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-12-3-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-7-12-3-1-2">
+<li id="minimal-4-7-12-3-1-2-1">
+<div class="para" id="p-derived-minimal-4-7-12-3-1-2-1">
+<span class="process-math">\(f(x)=-(x-2)^2+4\)</span> <details id="minimal-4-7-12-3-1-2-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(a=-1\)</span><span class="process-math">\(m=2\)</span><span class="process-math">\(x=2\)</span><span class="process-math">\(V=(2,4)\)</span><span class="process-math">\(f(2)=4\text{,}\)</span><span class="process-math">\(f(1)=f(3)\)</span><span class="process-math">\(f(0)=f(4)\text{.}\)</span><div class="displaymath process-math" id="minimal-4-7-12-3-1-2-1-2-8">
+\begin{equation*}
+f(1)=-(1-2)^2+4=-(-1)^2+4=-1+4=3
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-7-12-3-1-2-1-2-9">
+\begin{equation*}
+f(3)=-(3-2)^2+4=-(1)^2+4=-1+4=3
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-7-12-3-1-2-1-2-10">
+\begin{equation*}
+f(0)=-(0-2)^2+4=-(-2)^2+4=-4+4=0
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-7-12-3-1-2-1-2-11">
+\begin{equation*}
+f(4)=-(4-2)^2+4=-(2)^2+4=-4+4=0
+\end{equation*}
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="Parabola1.png" class="contained"></div>
+<div class="autopermalink" data-description="Solução 1.a.1"><a href="#minimal-4-7-12-3-1-2-1-2" title="Copy heading and permalink for Solução 1.a.1" aria-label="Copy heading and permalink for Solução 1.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#minimal-4-7-12-3-1-2-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="minimal-4-7-12-3-1-2-2">
+<div class="para" id="p-derived-minimal-4-7-12-3-1-2-2">
+<span class="process-math">\(g(x)=x^2-6x+5\)</span> <details id="minimal-4-7-12-3-1-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(a=1\text{,}\)</span><span class="process-math">\(b=-6\)</span><span class="process-math">\(c=5\text{,}\)</span><div class="displaymath process-math" id="minimal-4-7-12-3-1-2-2-2-4">
+\begin{equation*}
+m=-\dfrac{b}{2a}=-\dfrac{(-6)}{2\cdot(1)}=3
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-7-12-3-1-2-2-2-5">
+\begin{equation*}
+k=-\dfrac{\Delta}{4a}=-\dfrac{(-6)^2-4\cdot(1)\cdot(5)}{4\cdot(1)}=-4
+\end{equation*}
+</div>
+<div class="para" id="minimal-4-7-12-3-1-2-2-2-6">Logo, <span class="process-math">\(f(x)=(x-3)^2-4\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-12-3-1-2-2-2-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-7-12-3-1-2-2-2-7">
+<div class="para">Obtendo a função quadrática na forma canônica, cujos valores de <span class="process-math">\(a=1\)</span> indica a concavidade virada para cima, <span class="process-math">\(m=3\)</span> indica o eixo de simetria coincidindo com a reta <span class="process-math">\(x=3\)</span> e <span class="process-math">\(V=(3,-4)\)</span> o vértice da função indicando o ponto de mínimo da parábola. Podemos utilizar ainda mais um valor numérico da função para ajudar no desenho da parábola. Já sabemos que <span class="process-math">\(f(3)=-4\text{,}\)</span> é o vértice da paŕabola. Então, como x=3 é o eixo de simetria da parábola, então <span class="process-math">\(f(2)=f(4)\)</span> e <span class="process-math">\(f(1)=f(5)\text{.}\)</span> Temos então:</div>
+<div class="displaymath process-math" id="minimal-4-7-12-3-1-2-2-2-7-8">
+\begin{equation*}
+f(2)=(2-3)^2-4=(1)^2-4=1-4=-3
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-7-12-3-1-2-2-2-7-9">
+\begin{equation*}
+f(4)=(4-3)^2-4=(1)^2-4=1-4=-3
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-7-12-3-1-2-2-2-7-10">
+\begin{equation*}
+f(1)=(1-3)^2-4=(-2)^2-4=4-4=0
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-7-12-3-1-2-2-2-7-11">
+\begin{equation*}
+f(5)=(5-3)^2-4=(2)^2-4=4-4=0
+\end{equation*}
+</div>
+<div class="para">Veja o gráfico cuja parábola passa pelos pontos (2,-3), (4,-3), (1,0), (5,0), o vértice (3,-4), e concavidade virada para cima. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="Parabola2.png" class="contained"></div>
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-7-12-3-1-2-2-2-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 1.b.1"><a href="#minimal-4-7-12-3-1-2-2-2" title="Copy heading and permalink for Solução 1.b.1" aria-label="Copy heading and permalink for Solução 1.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#minimal-4-7-12-3-1-2-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-7-12-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li></ol>
+<div class="autopermalink" data-description="Subseção 2.6.1: Esboçando o Gráfico da Função Quadrática"><a href="#minimal-4-7-12" title="Copy heading and permalink for Subseção 2.6.1: Esboçando o Gráfico da Função Quadrática" aria-label="Copy heading and permalink for Subseção 2.6.1: Esboçando o Gráfico da Função Quadrática">🔗</a></div></section><div class="autopermalink" data-description="Subseção 2.6: Escrevendo a Função Quadrática na Forma Padrão"><a href="#minimal-4-7" title="Copy heading and permalink for Subseção 2.6: Escrevendo a Função Quadrática na Forma Padrão" aria-label="Copy heading and permalink for Subseção 2.6: Escrevendo a Função Quadrática na Forma Padrão">🔗</a></div></section><section class="subsection" id="minimal-4-8"><h3 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Foco da Parábola</span>
+</h3>
+<div class="para" id="minimal-4-8-2">Geometricamente, parábola é o lugar geométrico dos pontos equidistantes a uma reta <span class="process-math">\(d\)</span> chamada diretriz e um ponto fixo <span class="process-math">\(F\)</span> chamado de foco que não esteja na reta. Observando a imagem, temos uma parábola de concavidade positiva. Dentro da concavidade e situado no eixo de simetria da parábola está localizado o ponto <span class="process-math">\(F\text{,}\)</span> assim, colinear com o vértice da parábola. Nesta, localizamos um ponto <span class="process-math">\(A\)</span> e na reta diretriz um ponto <span class="process-math">\(B\text{.}\)</span> Note que a distância do ponto <span class="process-math">\(A\)</span> ao foco <span class="process-math">\(F\)</span> tem a mesma medida que a distância do ponto <span class="process-math">\(A\)</span> ao foco <span class="process-math">\(B\text{.}\)</span> Ou seja, <span class="process-math">\(\overline{AF}=\overline{AB}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="Parabola4.png" class="contained"></div>
+<div class="para logical" id="minimal-4-8-4">
+<div class="para"><em class="alert">Elementos da Parábola</em></div>
+<ul class="disc" id="minimal-4-8-4-2">
+<li id="minimal-4-8-4-2-1">
+<div class="para" id="p-derived-minimal-4-8-4-2-1">
+<em class="alert">FOCO:</em> ponto fora da diretriz que se encontra no eixo de simetria da parábola e fora da diretriz.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-4-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-4-2-2">
+<div class="para" id="p-derived-minimal-4-8-4-2-2">
+<em class="alert">DIRETRIZ:</em> reta cuja distância de qualquer ponto da parábola e o foco é igual à distância destes pontos da parábola à reta diretriz. Será adotada a notação <span class="process-math">\(d\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-4-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-4-2-3">
+<div class="para" id="p-derived-minimal-4-8-4-2-3">
+<em class="alert">PARÂMETRO:</em> é a distância do foco e a reta diretriz e será adotada a notação <span class="process-math">\(2p\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-4-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-4-2-4">
+<div class="para" id="p-derived-minimal-4-8-4-2-4">
+<em class="alert">VÉRTICE:</em> é o ponto da parábola mais próximo da diretriz. Está na metade da distância do foco à reta diretriz.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-4-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-4-2-5">
+<div class="para" id="p-derived-minimal-4-8-4-2-5">
+<em class="alert">CÁLCULO DA EQUAÇÃO DA PARÁBOLA:</em> para determinar a equação da parábola utilizaremos o vértice localizado na origem do sistema de eixos ortogonais <span class="process-math">\(V=(0,0)\text{,}\)</span> o eixo de simetria da parábola coincidente com o eixo y, um ponto na parábola cujas coordenadas são <span class="process-math">\(A=(x,y)\text{,}\)</span> um ponto na reta diretriz e de mesma abscissa que o ponto <span class="process-math">\(A\)</span> que denotaremos <span class="process-math">\(B=(x,-p)\)</span> e o foco de coordenadas <span class="process-math">\(F=(0,p)\text{.}\)</span> Assim, usando a fórmula da distância entre dois pontos, temos que:<div class="displaymath process-math" id="minimal-4-8-4-2-5-7">
+\begin{equation*}
+\sqrt{(x-0)^2+(y-p)^2}=\sqrt{(x-x)^2+(y+p)^2}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-8-4-2-5-8">
+\begin{equation*}
+x^2+y^2-2\cdot y\cdot p+p^2=0+y^2+2\cdot y\cdot p+p^2
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-8-4-2-5-9">
+\begin{equation*}
+x^2-2yp=2yp
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-8-4-2-5-10">
+\begin{equation*}
+4yp=x^2
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-8-4-2-5-11">
+\begin{equation*}
+y=\dfrac{x^2}{4p}
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-4-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">
+<div class="para" id="minimal-4-8-4-3">
+<em class="alert">Exemplo 1:</em> Seja uma função quadrática cuja lei de formação é <span class="process-math">\(y=2x^2\)</span> temos que o vértice da função é o ponto <span class="process-math">\(V=(0,0)\text{.}\)</span> Como o parâmetro da função é <span class="process-math">\(p=\dfrac{1}{8}\text{,}\)</span> então o foco da parábola é o ponto <span class="process-math">\(F=\left(0,\dfrac{1}{8}\right)\)</span> e a diretriz é a reta <span class="process-math">\(d:y=\dfrac{-1}{8}\text{.}\)</span> Portanto, segue o gráfico. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="foco1.png" class="contained"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-4-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> <div class="para" id="minimal-4-8-4-4">
+<em class="alert">Exemplo 2:</em> Seja uma função quadrática cuja lei de formação é <span class="process-math">\(y=\dfrac{x^2}{8}\)</span> temos que o veŕtice da função é o ponto <span class="process-math">\(V=(0,0)\text{.}\)</span> Como o parâmetro da função é <span class="process-math">\(p=4\text{,}\)</span> então o foco da parábola é o ponto <span class="process-math">\(F=(0,2)\)</span> e a diretriz é a reta <span class="process-math">\(d:y=-2\text{.}\)</span> Portanto segue o gráfico da função: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="foco2.png" class="contained"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-4-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div> <div class="para" id="minimal-4-8-4-5">
+<em class="alert">Exemplo 3:</em> Seja uma função quadrática cuja lei de formação é <span class="process-math">\(y=-\dfrac{1}{4}(x-3)^2+2\)</span> temos que o vértice da função é o ponto <span class="process-math">\(V=(3,2)\text{.}\)</span> Como o parâmetro da função é <span class="process-math">\(p=1\)</span> então o foco da parábola é o ponto <span class="process-math">\(F=(3,1)\)</span> e a reta diretriz tem lei de formação <span class="process-math">\(d:y=3\text{.}\)</span> Portanto, segue o gráfico da função: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="foco3.png" class="contained"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-4-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="minimal-4-8-5"><h4 class="heading">
+<span class="type">Teorema</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="minimal-4-8-5-1-1">Dado uma parábola com equação canônica <span class="process-math">\(y=a(x-m)^2+k\text{,}\)</span> as coordenadas do foco são <span class="process-math">\(F=\left(m,k+\dfrac{1}{4a}\right)\)</span> e a diretriz é a reta <span class="process-math">\(y=k-\dfrac{1}{4a}\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-5-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Teorema 2.4"><a href="#minimal-4-8-5" title="Copy heading and permalink for Teorema 2.4" aria-label="Copy heading and permalink for Teorema 2.4">🔗</a></div></article><div class="para" id="minimal-4-8-6">Uma aplicação deste elemento importante da parábola é o <em class="alert">fogão solar</em>, um dispositivo sustentável que usa a energia térmica do sol para cozinhar alimentos, substituindo o uso de combustíveis como lenha, carvão, gás e eletricidade.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-8-7">
+<div class="para">Alguns princípios básicos dos fogões solares são:</div>
+<ul class="disc" id="minimal-4-8-7-1">
+<li id="minimal-4-8-7-1-1">
+<div class="para" id="p-derived-minimal-4-8-7-1-1">O fogão solar possui um coletor que captura a luz solar e a converte em calor. Este coletor pode ser feito de materiais como vidro ou plástico transparente, que permitem a passagem da luz solar enquanto retêm o calor.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-7-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-7-1-2">
+<div class="para" id="p-derived-minimal-4-8-7-1-2">Alguns modelos de fogões solares incluem refletores que direcionam e concentram a luz solar no coletor, aumentando assim a eficiência do aquecimento.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-7-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-7-1-3">
+<div class="para" id="p-derived-minimal-4-8-7-1-3">Para maximizar a retenção de calor, o fogão solar geralmente é projetado com isolamento ao redor do recipiente de cozimento, reduzindo a perda de calor para o ambiente.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-7-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-7-1-4">
+<div class="para" id="p-derived-minimal-4-8-7-1-4">A panela ou recipiente de cozimento é colocado no coletor solar, onde absorve o calor gerado pela luz solar concentrada. Os alimentos são então cozidos lentamente pela transferência de calor do recipiente para os ingredientes.</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-7-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Tipos de Fogões Solares:</div>
+<ul class="disc" id="minimal-4-8-7-2">
+<li id="minimal-4-8-7-2-1">
+<em class="alert">Fogões Solares de Caixa:</em> é o tipo mais comum de fogão solar, composto de caixa isolada, tampa transparente e um refletor dentro da caixa para refletir a luz do sol, mantendo dentro do recipiente um ambiente propício para cozimento. <figure class="figure figure-like" id="minimal-4-8-7-2-1-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="fsc.png" class="contained"></div>Fonte: <a href="referencias.html#ref-18" class="xref" data-knowl="./knowl/xref/ref-18.html" data-reveal-label="Revelar" data-close-label="Close" title="Referência bibliográfica 4.18">[4.18]</a><figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Fogão Solar de Caixa<div class="autopermalink" data-description="Figura 2.5"><a href="#minimal-4-8-7-2-1-2" title="Copy heading and permalink for Figura 2.5" aria-label="Copy heading and permalink for Figura 2.5">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item"><a href="#minimal-4-8-7-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-7-2-2">
+<em class="alert">Fogões Solares Parabólicos:</em> usam refletores parabólicos para refletir a luz num único ponto (foco da parábola). <figure class="figure figure-like" id="minimal-4-8-7-2-2-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="fspr.png" class="contained"></div>Fonte: <a href="referencias.html#ref-19" class="xref" data-knowl="./knowl/xref/ref-19.html" data-reveal-label="Revelar" data-close-label="Close" title="Referência bibliográfica 4.19">[4.19]</a><figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Fogão Solar Parabólico<div class="autopermalink" data-description="Figura 2.6"><a href="#minimal-4-8-7-2-2-2" title="Copy heading and permalink for Figura 2.6" aria-label="Copy heading and permalink for Figura 2.6">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item"><a href="#minimal-4-8-7-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-7-2-3">
+<em class="alert">Fogões Solares Híbridos:</em> combinam diversos tipos de tecnologia de aquecimento. <figure class="figure figure-like" id="minimal-4-8-7-2-3-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="fsh.png" class="contained"></div>Fonte: <a href="referencias.html#ref-20" class="xref" data-knowl="./knowl/xref/ref-20.html" data-reveal-label="Revelar" data-close-label="Close" title="Referência bibliográfica 4.20">[4.20]</a><figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Fogão Solar Híbrido<div class="autopermalink" data-description="Figura 2.7"><a href="#minimal-4-8-7-2-3-2" title="Copy heading and permalink for Figura 2.7" aria-label="Copy heading and permalink for Figura 2.7">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item"><a href="#minimal-4-8-7-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-7-2-4">
+<em class="alert">Fogão Solare Portátil:</em> projetados para serem compactos e fáceis de transportar. <figure class="figure figure-like" id="minimal-4-8-7-2-4-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="fspo.png" class="contained"></div>Fonte: <a href="referencias.html#ref-21" class="xref" data-knowl="./knowl/xref/ref-21.html" data-reveal-label="Revelar" data-close-label="Close" title="Referência bibliográfica 4.21">[4.21]</a><figcaption><span class="type">Figura</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Fogão Solar Portátil<div class="autopermalink" data-description="Figura 2.8"><a href="#minimal-4-8-7-2-4-2" title="Copy heading and permalink for Figura 2.8" aria-label="Copy heading and permalink for Figura 2.8">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item"><a href="#minimal-4-8-7-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-8-8">
+<div class="para">Vantagens e desvantagens do fogão solar: <div class="para" id="minimal-4-8-8-1">Vantagens:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-8-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+</div>
+<ul class="disc" id="minimal-4-8-8-2">
+<li id="minimal-4-8-8-2-1">
+<div class="para" id="p-derived-minimal-4-8-8-2-1">Sustentabilidade ambiental</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-8-2-2">
+<div class="para" id="p-derived-minimal-4-8-8-2-2">Economia de recursos</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-8-2-3">
+<div class="para" id="p-derived-minimal-4-8-8-2-3">Custo efetivo a longo prazo</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-8-2-4">
+<div class="para" id="p-derived-minimal-4-8-8-2-4">Versatilidade</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-8-2-5">
+<div class="para" id="p-derived-minimal-4-8-8-2-5">Segurança</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-8-2-6">
+<div class="para" id="p-derived-minimal-4-8-8-2-6">Facilidade de uso</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-2-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para"><div class="para" id="minimal-4-8-8-3">Desvantagens:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-8-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div></div>
+<ul class="disc" id="minimal-4-8-8-4">
+<li id="minimal-4-8-8-4-1">
+<div class="para" id="p-derived-minimal-4-8-8-4-1">Dependência das condições climáticas</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-4-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-8-4-2">
+<div class="para" id="p-derived-minimal-4-8-8-4-2">Tempo longo de cozimento</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-4-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-8-4-3">
+<div class="para" id="p-derived-minimal-4-8-8-4-3">Limitações de capacidade</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-4-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-8-4-4">
+<div class="para" id="p-derived-minimal-4-8-8-4-4">Necessodade de ajustes de posição</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-4-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-8-4-5">
+<div class="para" id="p-derived-minimal-4-8-8-4-5">Custo inicial elevado</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-4-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="minimal-4-8-8-4-6">
+<div class="para" id="p-derived-minimal-4-8-8-4-6">Sensibilidade a danos</div>
+<div class="autopermalink" data-description="Item"><a href="#minimal-4-8-8-4-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-8" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<em class="alert">Atividades</em><div class="para logical" id="minimal-4-8-10">
+<ol class="decimal" id="minimal-4-8-10-1">
+<li id="minimal-4-8-10-1-1">
+<div class="para" id="p-derived-minimal-4-8-10-1-1">Utilize os botões deslizantes para coincidir parábolas, focos e retas diretrizes, observando a fórmula da função quadrática no gráfico. <iframe src="https://www.geogebra.org/material/iframe/id/yxrmgnjk/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-8-10-1-1-1" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-8-10-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="minimal-4-8-10-1-2">
+<div class="para" id="p-derived-minimal-4-8-10-1-2">Observe que no gráfico interativo a seguir, o segmento desenhado representa o parâmetro da parábola <span class="process-math">\(f\text{.}\)</span> Use os botões deslizantes para mostrar as possibilidade de lei de formação da parábola cujo parâmetro é o segmento AB. <iframe src="https://www.geogebra.org/material/iframe/id/wbdtqmwz/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-8-10-1-2-2" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#minimal-4-8-10-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="minimal-4-8-10-1-3">
+<div class="para" id="p-derived-minimal-4-8-10-1-3">Nos fogões solares, para que haja um cozimento efetivo dos alimentos e um bom aquecimento das panelas, é necessário que estas estejam localizadas no <em class="alert">foco</em> da parábola. No gráfico a seguir, as linhas em laranja representam a incidência dos raios solares refletindo no foco. Utilize os botões deslizantes do gráfico interativo para colocar o foco no centro da panela, observando a fórmula da função quadrática desenhada. <iframe src="https://www.geogebra.org/material/iframe/id/mmm3drap/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-8-10-1-3-2" width="600" height="600"></iframe>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#minimal-4-8-10-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-8-10" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subseção 2.7: Foco da Parábola"><a href="#minimal-4-8" title="Copy heading and permalink for Subseção 2.7: Foco da Parábola" aria-label="Copy heading and permalink for Subseção 2.7: Foco da Parábola">🔗</a></div></section><section class="subsection" id="minimal-4-9"><h3 class="heading hide-type">
+<span class="type">Subseção</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.8</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercícios</span>
+</h3>
+<ol class="decimal" id="minimal-4-9-2">
+<li id="minimal-4-9-2-1">
+<div class="para" id="minimal-4-9-2-1-1">Identifique qual gráfico a seguir representa uma função quadrática.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-1-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-9-2-1-2">
+<li id="minimal-4-9-2-1-2-1">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="can01.png" class="contained"></div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#minimal-4-9-2-1-2-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-1-2-2">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="can02.png" class="contained"></div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#minimal-4-9-2-1-2-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-1-2-3">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="can03.png" class="contained"></div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#minimal-4-9-2-1-2-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-1-2-4">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="can04.png" class="contained"></div>
+<div class="autopermalink" data-description="Item 1.d"><a href="#minimal-4-9-2-1-2-4" title="Copy heading and permalink for Item 1.d" aria-label="Copy heading and permalink for Item 1.d">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-1-2-5">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="can05.png" class="contained"></div>
+<div class="autopermalink" data-description="Item 1.e"><a href="#minimal-4-9-2-1-2-5" title="Copy heading and permalink for Item 1.e" aria-label="Copy heading and permalink for Item 1.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Item 1"><a href="#minimal-4-9-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-2">
+<div class="para" id="minimal-4-9-2-2-1">Localize qual das retas representam o eixo de simetria da função quadrática desenhada no gráfico.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="eixo.png" class="contained"></div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-9-2-2-3">
+<li id="minimal-4-9-2-2-3-1">
+<div class="para" id="p-derived-minimal-4-9-2-2-3-1">x=0</div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#minimal-4-9-2-2-3-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-2-3-2">
+<div class="para" id="p-derived-minimal-4-9-2-2-3-2">x=2</div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#minimal-4-9-2-2-3-2" title="Copy heading and permalink for Item 2.b" aria-label="Copy heading and permalink for Item 2.b">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-2-3-3">
+<div class="para" id="p-derived-minimal-4-9-2-2-3-3"><span class="process-math">\(\displaystyle x=\dfrac{5}{2}\)</span></div>
+<div class="autopermalink" data-description="Item 2.c"><a href="#minimal-4-9-2-2-3-3" title="Copy heading and permalink for Item 2.c" aria-label="Copy heading and permalink for Item 2.c">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-2-3-4">
+<div class="para" id="p-derived-minimal-4-9-2-2-3-4">x=3</div>
+<div class="autopermalink" data-description="Item 2.d"><a href="#minimal-4-9-2-2-3-4" title="Copy heading and permalink for Item 2.d" aria-label="Copy heading and permalink for Item 2.d">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-2-3-5">
+<div class="para" id="p-derived-minimal-4-9-2-2-3-5"><span class="process-math">\(\displaystyle x=\dfrac{7}{2}\)</span></div>
+<div class="autopermalink" data-description="Item 2.e"><a href="#minimal-4-9-2-2-3-5" title="Copy heading and permalink for Item 2.e" aria-label="Copy heading and permalink for Item 2.e">🔗</a></div>
+</li>
+</ol>
+<details id="minimal-4-9-2-2-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="eixoII.png" class="contained"></div>
+<div class="autopermalink" data-description="Solução 2.1"><a href="#minimal-4-9-2-2-4" title="Copy heading and permalink for Solução 2.1" aria-label="Copy heading and permalink for Solução 2.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item 2"><a href="#minimal-4-9-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-3">
+<div class="para" id="minimal-4-9-2-3-1">Relacione os valores de <span class="process-math">\(a\)</span> da função <span class="process-math">\(f(x)=ax^2\)</span> com seus respectivos gráficos:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-9-2-3-2">
+<li id="minimal-4-9-2-3-2-1">
+<div class="para" id="p-derived-minimal-4-9-2-3-2-1"><span class="process-math">\(\displaystyle a&lt;0\)</span></div>
+<div class="autopermalink" data-description="Item 3.a"><a href="#minimal-4-9-2-3-2-1" title="Copy heading and permalink for Item 3.a" aria-label="Copy heading and permalink for Item 3.a">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-3-2-2">
+<div class="para" id="p-derived-minimal-4-9-2-3-2-2"><span class="process-math">\(\displaystyle a=0\)</span></div>
+<div class="autopermalink" data-description="Item 3.b"><a href="#minimal-4-9-2-3-2-2" title="Copy heading and permalink for Item 3.b" aria-label="Copy heading and permalink for Item 3.b">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-3-2-3">
+<div class="para" id="p-derived-minimal-4-9-2-3-2-3"><span class="process-math">\(\displaystyle a&gt;0\)</span></div>
+<div class="autopermalink" data-description="Item 3.c"><a href="#minimal-4-9-2-3-2-3" title="Copy heading and permalink for Item 3.c" aria-label="Copy heading and permalink for Item 3.c">🔗</a></div>
+</li>
+</ol>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="parabola3d.png" class="contained"></div>
+<details id="minimal-4-9-2-3-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-9-2-3-4-1">
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="4e.png" class="contained"></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-3-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 3.1"><a href="#minimal-4-9-2-3-4" title="Copy heading and permalink for Solução 3.1" aria-label="Copy heading and permalink for Solução 3.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item 3"><a href="#minimal-4-9-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-4">
+<div class="para" id="minimal-4-9-2-4-1">Associe as funções quadráticas na forma <span class="process-math">\(f(x)=ax^2+k\)</span> com os gráficos a seguir:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-9-2-4-2">
+<li id="minimal-4-9-2-4-2-1">
+<div class="para" id="p-derived-minimal-4-9-2-4-2-1"><span class="process-math">\(\displaystyle f(x)=-\sqrt7x^2+\dfrac{5}{3}\)</span></div>
+<div class="autopermalink" data-description="Item 4.a"><a href="#minimal-4-9-2-4-2-1" title="Copy heading and permalink for Item 4.a" aria-label="Copy heading and permalink for Item 4.a">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-4-2-2">
+<div class="para" id="p-derived-minimal-4-9-2-4-2-2"><span class="process-math">\(\displaystyle f(x)=2x^2-3\)</span></div>
+<div class="autopermalink" data-description="Item 4.b"><a href="#minimal-4-9-2-4-2-2" title="Copy heading and permalink for Item 4.b" aria-label="Copy heading and permalink for Item 4.b">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-4-2-3">
+<div class="para" id="p-derived-minimal-4-9-2-4-2-3"><span class="process-math">\(\displaystyle f(x)=\dfrac{x^2}{4}-1\)</span></div>
+<div class="autopermalink" data-description="Item 4.c"><a href="#minimal-4-9-2-4-2-3" title="Copy heading and permalink for Item 4.c" aria-label="Copy heading and permalink for Item 4.c">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-4-2-4">
+<div class="para" id="p-derived-minimal-4-9-2-4-2-4"><span class="process-math">\(\displaystyle f(x)=-x^2+3\)</span></div>
+<div class="autopermalink" data-description="Item 4.d"><a href="#minimal-4-9-2-4-2-4" title="Copy heading and permalink for Item 4.d" aria-label="Copy heading and permalink for Item 4.d">🔗</a></div>
+</li>
+</ol>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="associe.png" class="contained"></div>
+<details id="minimal-4-9-2-4-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-9-2-4-4-1">dI ; bII ; cIII; aIV<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-4-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 4.1"><a href="#minimal-4-9-2-4-4" title="Copy heading and permalink for Solução 4.1" aria-label="Copy heading and permalink for Solução 4.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item 4"><a href="#minimal-4-9-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-5">
+<div class="para" id="minimal-4-9-2-5-1">Dada a função <span class="process-math">\(f(x)=2(x-3)^2-3\text{,}\)</span> calcule:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-5-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha lower-alpha-level-1" id="minimal-4-9-2-5-2">
+<li id="minimal-4-9-2-5-2-1">
+<div class="para" id="p-derived-minimal-4-9-2-5-2-1">
+<span class="process-math">\(f(-2)\)</span> <details id="minimal-4-9-2-5-2-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(f(-2)=2\cdot(-2-3)^2-3=2\cdot(-5)^2-3=2\cdot25-3=50-3=47\)</span><div class="autopermalink" data-description="Solução 5.a.1"><a href="#minimal-4-9-2-5-2-1-2" title="Copy heading and permalink for Solução 5.a.1" aria-label="Copy heading and permalink for Solução 5.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 5.a"><a href="#minimal-4-9-2-5-2-1" title="Copy heading and permalink for Item 5.a" aria-label="Copy heading and permalink for Item 5.a">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-5-2-2">
+<div class="para" id="p-derived-minimal-4-9-2-5-2-2">
+<span class="process-math">\(f(0)\)</span> <details id="minimal-4-9-2-5-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(f(0)=2\cdot(0-3)^2-3=2\cdot(-3)^2-3=2\cdot9-3=18-3=15\)</span><div class="autopermalink" data-description="Solução 5.b.1"><a href="#minimal-4-9-2-5-2-2-2" title="Copy heading and permalink for Solução 5.b.1" aria-label="Copy heading and permalink for Solução 5.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 5.b"><a href="#minimal-4-9-2-5-2-2" title="Copy heading and permalink for Item 5.b" aria-label="Copy heading and permalink for Item 5.b">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-5-2-3">
+<div class="para" id="p-derived-minimal-4-9-2-5-2-3">
+<span class="process-math">\(f\left(\dfrac{1}{2}\right)\)</span> <details id="minimal-4-9-2-5-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(f\left(\dfrac{1}{2}\right)=2\cdot\left(\dfrac{1}{2}-3\right)^2-3=2\cdot\left(\dfrac{-5}{2}\right)^2-3=2\cdot\left(\dfrac{25}{4}\right)-3=\left(\dfrac{25}{2}\right)-3=\dfrac{19}{2}\)</span><div class="autopermalink" data-description="Solução 5.c.1"><a href="#minimal-4-9-2-5-2-3-2" title="Copy heading and permalink for Solução 5.c.1" aria-label="Copy heading and permalink for Solução 5.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 5.c"><a href="#minimal-4-9-2-5-2-3" title="Copy heading and permalink for Item 5.c" aria-label="Copy heading and permalink for Item 5.c">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-5-2-4">
+<div class="para" id="p-derived-minimal-4-9-2-5-2-4">
+<span class="process-math">\(f(-\sqrt2)\)</span> <details id="minimal-4-9-2-5-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<span class="process-math">\(f(-\sqrt2)=2(-\sqrt2-3)^2-3=2(2+3\sqrt2+3\sqrt2+9)-3=4+12\sqrt2+18-3=12\sqrt2+19\)</span><div class="autopermalink" data-description="Solução 5.d.1"><a href="#minimal-4-9-2-5-2-4-2" title="Copy heading and permalink for Solução 5.d.1" aria-label="Copy heading and permalink for Solução 5.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 5.d"><a href="#minimal-4-9-2-5-2-4" title="Copy heading and permalink for Item 5.d" aria-label="Copy heading and permalink for Item 5.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Item 5"><a href="#minimal-4-9-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-6">
+<div class="para" id="minimal-4-9-2-6-1">Demonstre como escrever as funções quadráticas a seguir na forma canônima<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-6-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<details id="minimal-4-9-2-6-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Dica</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para" id="minimal-4-9-2-6-2-1">
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/qFgj8iunPWo?&amp;modestbranding=1&amp;rel=0" id="minimal-4-9-2-6-2-1-1"></iframe></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-6-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>Fonte: <a href="referencias.html#ref-22" class="xref" data-knowl="./knowl/xref/ref-22.html" data-reveal-label="Revelar" data-close-label="Close" title="Referência bibliográfica 4.22">[4.22]</a><div class="para" id="minimal-4-9-2-6-2-3">Observe que no vídeo o professor usa <span class="process-math">\(k=f(m)\text{,}\)</span> o que não está errado, pois <span class="process-math">\(k\)</span> é a imagem do vértice da parábola quando <span class="process-math">\(x=m\text{.}\)</span> Logo, podemos optar por esta forma de resolver. A última alternativa resolveremos dessa forma.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-6-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Dica 6.1"><a href="#minimal-4-9-2-6-2" title="Copy heading and permalink for Dica 6.1" aria-label="Copy heading and permalink for Dica 6.1">🔗</a></div>
+</div></details><ol class="lower-alpha lower-alpha-level-1" id="minimal-4-9-2-6-3">
+<li id="minimal-4-9-2-6-3-1">
+<div class="para" id="p-derived-minimal-4-9-2-6-3-1">
+<span class="process-math">\(y=x^2-5x+6\)</span> <details id="minimal-4-9-2-6-3-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-9-2-6-3-1-2-1">Seja <span class="process-math">\(m=-\dfrac{b}{2a}\text{,}\)</span>  <span class="process-math">\(k=\dfrac{4ac-b^2}{4a}\)</span> e <span class="process-math">\(a=1\text{,}\)</span> <span class="process-math">\(b=-5\)</span> e <span class="process-math">\(c=6\text{,}\)</span> então<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-6-3-1-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<span class="process-math">\(y=1\left(x-\dfrac{-5}{2\cdot1}\right)^2+\dfrac{4\cdot1\cdot6-(-5)^2}{4\cdot1}
+=\left(x+\dfrac{5}{2}\right)^2+\dfrac{(24-25)}{4}
+=\left(x+\dfrac{5}{2}\right)^2-\dfrac{1}{4}\)</span><div class="autopermalink" data-description="Solução 6.a.1"><a href="#minimal-4-9-2-6-3-1-2" title="Copy heading and permalink for Solução 6.a.1" aria-label="Copy heading and permalink for Solução 6.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 6.a"><a href="#minimal-4-9-2-6-3-1" title="Copy heading and permalink for Item 6.a" aria-label="Copy heading and permalink for Item 6.a">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-6-3-2">
+<div class="para" id="p-derived-minimal-4-9-2-6-3-2">
+<span class="process-math">\(y=x^2-4x+3\)</span> <details id="minimal-4-9-2-6-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-9-2-6-3-2-2-1">Seja <span class="process-math">\(m=-\dfrac{b}{2a}\text{,}\)</span>  <span class="process-math">\(k=\dfrac{4ac-b^2}{4a}\)</span> e <span class="process-math">\(a=1\text{,}\)</span> <span class="process-math">\(b=-4\)</span> e <span class="process-math">\(c=3\text{,}\)</span> então<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-6-3-2-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<span class="process-math">\(y=1\left(x-\dfrac{-4}{2\cdot1}\right)^2+\dfrac{4\cdot1\cdot3-(-4)^2}{4\cdot1}
+=\left(x+\dfrac{4}{2}\right)^2+\dfrac{(12-16)}{4}
+=(x+2)^2-1\)</span><div class="autopermalink" data-description="Solução 6.b.1"><a href="#minimal-4-9-2-6-3-2-2" title="Copy heading and permalink for Solução 6.b.1" aria-label="Copy heading and permalink for Solução 6.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 6.b"><a href="#minimal-4-9-2-6-3-2" title="Copy heading and permalink for Item 6.b" aria-label="Copy heading and permalink for Item 6.b">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-6-3-3">
+<div class="para" id="p-derived-minimal-4-9-2-6-3-3">
+<span class="process-math">\(y=-x^2+25x\)</span> <details id="minimal-4-9-2-6-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-9-2-6-3-3-2-1">Seja <span class="process-math">\(m=-\dfrac{b}{2a}\text{,}\)</span>  <span class="process-math">\(k=\dfrac{4ac-b^2}{4a}\)</span> e <span class="process-math">\(a=-1\text{,}\)</span> <span class="process-math">\(b=25\)</span> e <span class="process-math">\(c=0\text{,}\)</span> então<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-6-3-3-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<span class="process-math">\(y=-1\left(x-\dfrac{25}{2\cdot(-1)}\right)^2+\dfrac{4\cdot(-1)\cdot0-(25)^2}{4\cdot(-1)}
+=-\left(x-\dfrac{25}{2}\right)^2+\dfrac{625}{4}\)</span><div class="autopermalink" data-description="Solução 6.c.1"><a href="#minimal-4-9-2-6-3-3-2" title="Copy heading and permalink for Solução 6.c.1" aria-label="Copy heading and permalink for Solução 6.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 6.c"><a href="#minimal-4-9-2-6-3-3" title="Copy heading and permalink for Item 6.c" aria-label="Copy heading and permalink for Item 6.c">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-6-3-4">
+<div class="para" id="p-derived-minimal-4-9-2-6-3-4">
+<span class="process-math">\(y=2x^2-4x+2\)</span> <details id="minimal-4-9-2-6-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-9-2-6-3-4-2-1">Seja <span class="process-math">\(m=-\dfrac{b}{2a}\text{,}\)</span>  <span class="process-math">\(k=f(m)\)</span> e <span class="process-math">\(a=2\text{,}\)</span> <span class="process-math">\(b=-4\)</span> e <span class="process-math">\(c=2\text{,}\)</span> então<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-6-3-4-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="minimal-4-9-2-6-3-4-2-2">
+\begin{equation*}
+m=-\left(\dfrac{-4}{2\cdot2}\right)=\left(\dfrac{4}{4}\right)=1
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="minimal-4-9-2-6-3-4-2-3">
+\begin{equation*}
+f(m)=2\cdot(m)^2-4\cdot(m)+2=2\cdot1^2-4\cdot1+2=2-4+2=0
+\end{equation*}
+</div>
+<span class="process-math">\(y=2(x-1)^2\text{.}\)</span><div class="autopermalink" data-description="Solução 6.d.1"><a href="#minimal-4-9-2-6-3-4-2" title="Copy heading and permalink for Solução 6.d.1" aria-label="Copy heading and permalink for Solução 6.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Item 6.d"><a href="#minimal-4-9-2-6-3-4" title="Copy heading and permalink for Item 6.d" aria-label="Copy heading and permalink for Item 6.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Item 6"><a href="#minimal-4-9-2-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-7">
+<div class="para" id="minimal-4-9-2-7-1">Resolva o seguinte problema:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-7-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-9-2-7-2">(Enem Digital 2020) Em um ano, uma prefeitura apresentou o relatório de gastos públicos realizados pelo município. O documento mostra que foram gastos 72 mil reais no mês de janeiro (mês 1), que o maior gasto mensal ocorreu no mês de agosto (mês 8) e que a prefeitura gastou 105 mil reais no mês de dezembro (mês 12). A curva que modela esses gastos é a parábola y=T(x), com x sendo o número correspondente ao mês e T(x) em milhar de real. A expressão da função cujo gráfico é o da parábola descrita é:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-7-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-9-2-7-3">
+<li id="minimal-4-9-2-7-3-1">
+<div class="para" id="p-derived-minimal-4-9-2-7-3-1"><span class="process-math">\(\displaystyle T(x)=(x-8)^2+120\)</span></div>
+<div class="autopermalink" data-description="Item 7.a"><a href="#minimal-4-9-2-7-3-1" title="Copy heading and permalink for Item 7.a" aria-label="Copy heading and permalink for Item 7.a">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-7-3-2">
+<div class="para" id="p-derived-minimal-4-9-2-7-3-2"><span class="process-math">\(\displaystyle T(x)=-(x-8)^2+121\)</span></div>
+<div class="autopermalink" data-description="Item 7.b"><a href="#minimal-4-9-2-7-3-2" title="Copy heading and permalink for Item 7.b" aria-label="Copy heading and permalink for Item 7.b">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-7-3-3">
+<div class="para" id="p-derived-minimal-4-9-2-7-3-3"><span class="process-math">\(\displaystyle T(x)=3(x-16)^2+57\)</span></div>
+<div class="autopermalink" data-description="Item 7.c"><a href="#minimal-4-9-2-7-3-3" title="Copy heading and permalink for Item 7.c" aria-label="Copy heading and permalink for Item 7.c">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-7-3-4">
+<div class="para" id="p-derived-minimal-4-9-2-7-3-4"><span class="process-math">\(\displaystyle T(x)=-3(x-16)^2+25\)</span></div>
+<div class="autopermalink" data-description="Item 7.d"><a href="#minimal-4-9-2-7-3-4" title="Copy heading and permalink for Item 7.d" aria-label="Copy heading and permalink for Item 7.d">🔗</a></div>
+</li>
+</ol>
+<details id="minimal-4-9-2-7-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-9-2-7-4-1">Usaremos a função quadrática na forma canônica para encontrar a solução do exercício.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-7-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-9-2-7-4-2">
+<div class="para">Note que como o máximo ocorre no mês 8, então T(4)=105=T(12) em função da parábola ser simétrica ao vértice. Além disso, se T(1)=72, então, substituindo esses valores, temos</div>
+<div class="displaymath process-math" id="minimal-4-9-2-7-4-2-1">
+\begin{align*}
+a(4-8)^2+k \amp =105\\
+a(-4)^2+k \amp =105\\
+16a+k \amp =105
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-7-4-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-9-2-7-4-3">
+<div class="para">Analogamente,</div>
+<div class="displaymath process-math" id="minimal-4-9-2-7-4-3-1">
+\begin{align*}
+a(1-8)^2+k \amp =72\\
+a(-7)^2+k \amp =72\\
+49a+k \amp =72
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-7-4-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-9-2-7-4-4">
+<div class="para">Isolando <span class="process-math">\(k\)</span> na segunda  equação, temos que:</div>
+<div class="displaymath process-math" id="minimal-4-9-2-7-4-4-2">
+\begin{equation*}
+k=72-49a
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-7-4-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-9-2-7-4-5">
+<div class="para">Substituindo na primeira equação, temos:</div>
+<div class="displaymath process-math" id="minimal-4-9-2-7-4-5-1">
+\begin{align*}
+16a+72-49a \amp =105\\
+-33a \amp =33\\
+a \amp =\dfrac{33}{-33}\\
+a \amp =-1
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-7-4-5" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para logical" id="minimal-4-9-2-7-4-6">
+<div class="para">Encontrando o valor de <span class="process-math">\(k\text{,}\)</span> temos então:</div>
+<div class="displaymath process-math" id="minimal-4-9-2-7-4-6-2">
+\begin{align*}
+k \amp =72-49\cdot(-1)\\
+k \amp =72+49\\
+k \amp =121
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-7-4-6" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-9-2-7-4-7">Portanto, <span class="process-math">\(T(x)=-(x-8)^2+121\text{,}\)</span> <em class="alert">alternativa b</em>.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-7-4-7" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 7.1"><a href="#minimal-4-9-2-7-4" title="Copy heading and permalink for Solução 7.1" aria-label="Copy heading and permalink for Solução 7.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item 7"><a href="#minimal-4-9-2-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-8">
+<div class="para" id="minimal-4-9-2-8-1">Investigue os valores de <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(m\)</span> e <span class="process-math">\(k\text{,}\)</span> e com os botões deslizantes do gráfico, faça uma parábola que passe pelos pontos assinalados.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-8-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<iframe src="https://www.geogebra.org/material/iframe/id/mdrws35x/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-9-2-8-2" width="600" height="600"></iframe><div class="autopermalink" data-description="Item 8"><a href="#minimal-4-9-2-8" title="Copy heading and permalink for Item 8" aria-label="Copy heading and permalink for Item 8">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-9">
+<div class="para" id="minimal-4-9-2-9-1">Selecione qual dos gráficos a seguir representa a função <span class="process-math">\(f(x)=-3(x-1)^2+2\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-9-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<ol class="lower-alpha ol-marker-1" id="minimal-4-9-2-9-2">
+<li id="minimal-4-9-2-9-2-1">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="canonica1.png" class="contained"></div>
+<div class="autopermalink" data-description="Item 9.a"><a href="#minimal-4-9-2-9-2-1" title="Copy heading and permalink for Item 9.a" aria-label="Copy heading and permalink for Item 9.a">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-9-2-2">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="canonica2.png" class="contained"></div>
+<div class="autopermalink" data-description="Item 9.b"><a href="#minimal-4-9-2-9-2-2" title="Copy heading and permalink for Item 9.b" aria-label="Copy heading and permalink for Item 9.b">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-9-2-3">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="canonica3.png" class="contained"></div>
+<div class="autopermalink" data-description="Item 9.c"><a href="#minimal-4-9-2-9-2-3" title="Copy heading and permalink for Item 9.c" aria-label="Copy heading and permalink for Item 9.c">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-9-2-4">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="canonica4.png" class="contained"></div>
+<div class="autopermalink" data-description="Item 9.d"><a href="#minimal-4-9-2-9-2-4" title="Copy heading and permalink for Item 9.d" aria-label="Copy heading and permalink for Item 9.d">🔗</a></div>
+</li>
+</ol>
+<details id="minimal-4-9-2-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-9-2-9-3-1">Como o parâmentro <span class="process-math">\(a\)</span> é negativo, temos que a parábola tem a concavidade virada para baixo. Logo, vamos analisar apenas as alternativas b e d.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-9-3-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-9-2-9-3-2">O parâmentro <span class="process-math">\(m\)</span> é positivo, assim a parábola está à direita do eixo y.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-9-3-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-9-2-9-3-3">Por fim, o parâmetro <span class="process-math">\(k\)</span> é positivo, fazendo a parábola estar com seu vértice acima do eixo x, passando no ponto <span class="process-math">\(V=(m,k)=(1,2)\text{.}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-9-3-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="para" id="minimal-4-9-2-9-3-4">Portanto, alternativa b.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-9-3-4" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 9.1"><a href="#minimal-4-9-2-9-3" title="Copy heading and permalink for Solução 9.1" aria-label="Copy heading and permalink for Solução 9.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item 9"><a href="#minimal-4-9-2-9" title="Copy heading and permalink for Item 9" aria-label="Copy heading and permalink for Item 9">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-10">
+<div class="para" id="minimal-4-9-2-10-1">Justifique por quê a função quadrática <span class="process-math">\(f(x)=2x^2+28x+98\)</span> possui seu ponto de mínimo no eixo x.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-10-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<details id="minimal-4-9-2-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solução</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="minimal-4-9-2-10-2-1">Passando a função da forma padrão para a canônica, temos:<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-10-2-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="minimal-4-9-2-10-2-2">
+\begin{align*}
+f(x) \amp =2\left(x-\dfrac{(-28)}{2\cdot2}\right)^2+\dfrac{4\cdot2\cdot98-28^2}{4\cdot2}\\
+f(x) \amp =2\left(x-\dfrac{(-28)}{4}\right)^2+\dfrac{784-784}{8}\\
+f(x) \amp =2(x+7)^2+0\\
+f(x) \amp =2(x+7)^2
+\end{align*}
+</div>
+<div class="para" id="minimal-4-9-2-10-2-3">Note que função possui <span class="process-math">\(k=0\text{.}\)</span> Isto quer dizer que o vértice da função não está nem acima nem abaixo do eixo x. Portanto, a função quadrática <span class="process-math">\(f(x)=2(x+7)^2\)</span> possui seu ponto de mínimo sobre o eixo x.<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-10-2-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solução 10.1"><a href="#minimal-4-9-2-10-2" title="Copy heading and permalink for Solução 10.1" aria-label="Copy heading and permalink for Solução 10.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Item 10"><a href="#minimal-4-9-2-10" title="Copy heading and permalink for Item 10" aria-label="Copy heading and permalink for Item 10">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-11">
+<div class="para" id="minimal-4-9-2-11-1">Compare os gráficos a seguir e determine qual deles representa a Imagem <span class="process-math">\(Im(f)=\{y\in\mathbb{R}/y\geq-4\}\text{.}\)</span> <div class="para" id="minimal-4-9-2-11-1-2"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-11-1-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div> <div class="para" id="minimal-4-9-2-11-1-3"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-11-1-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:33.3333333333333% 33.3333333333333% 33.3333333333333%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="minimal-4-9-2-11-1-4-1">
+<span class="process-math">\(y=x^2-6x+5\)</span> <img src="imagem1.png" class="contained"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-11-1-4-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="minimal-4-9-2-11-1-4-2"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-11-1-4-2" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="para" id="minimal-4-9-2-11-1-4-3">
+<span class="process-math">\(y=-2x^2+12x-22\)</span> <img src="imagem2.png" class="contained"><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-11-1-4-3" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div></div>
+</div></div>
+<div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-11-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 11"><a href="#minimal-4-9-2-11" title="Copy heading and permalink for Item 11" aria-label="Copy heading and permalink for Item 11">🔗</a></div>
+</li>
+<li id="minimal-4-9-2-12">
+<div class="para" id="minimal-4-9-2-12-1">Utilizando os controles deslizantes que representam os coeficientes da função quadrática na forma padrão, identifique qual das panelas está no foco da função quadrática <span class="process-math">\(f(x)=\dfrac{x^2}{3}-\dfrac{1}{2}\)</span><div class="autopermalink" data-description="Parágrafo"><a href="#minimal-4-9-2-12-1" title="Copy heading and permalink for Parágrafo" aria-label="Copy heading and permalink for Parágrafo">🔗</a></div>
+</div>
+<iframe src="https://www.geogebra.org/material/iframe/id/qchaf6mm/width/800/height/800/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="minimal-4-9-2-12-2" width="600" height="600"></iframe><div class="autopermalink" data-description="Item 12"><a href="#minimal-4-9-2-12" title="Copy heading and permalink for Item 12" aria-label="Copy heading and permalink for Item 12">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Subseção 2.8: Exercícios"><a href="#minimal-4-9" title="Copy heading and permalink for Subseção 2.8: Exercícios" aria-label="Copy heading and permalink for Subseção 2.8: Exercícios">🔗</a></div></section><div class="autopermalink" data-description="Seção 2: Gráfico de Funções Quadráticas"><a href="#minimal-4" title="Copy heading and permalink for Seção 2: Gráfico de Funções Quadráticas" aria-label="Copy heading and permalink for Seção 2: Gráfico de Funções Quadráticas">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="minimal-3.html" title="Anterior"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Anterior</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="minimal-5.html" title="Próximo"><span class="name">Próximo</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
