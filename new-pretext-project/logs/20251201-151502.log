@@ -1,0 +1,363 @@
+WARNING : Could not find a target 'pdf', but found a target 'print' with format='pdf'; using this target.
+INFO    : Building target print
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Checking for update for required playwright chromium browser.
+INFO    : using playwright package to create previews for interactives from /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx for placement in /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/preview
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/extract-interactive.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/extract-interactive.xsl
+INFO    : discovering source file's directory name: /home/marcio/Documents/Test_pretext/new-pretext-project/source
+INFO    : verifying and expanding input directory: /home/marcio/Documents/Test_pretext/new-pretext-project/source/../generated-assets
+INFO    : input directory expanded to absolute path: /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets
+INFO    : verifying and expanding input directory: /home/marcio/Documents/Test_pretext/new-pretext-project/source/../assets
+INFO    : input directory expanded to absolute path: /home/marcio/Documents/Test_pretext/new-pretext-project/assets
+INFO    : automatic screenshot of interactive with identifier "cc-3-1-1" on page http://localhost:8888/cc-3-1-1.html to file cc-3-1-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "cc-8-1-2-2" on page http://localhost:8888/cc-8-1-2-2.html to file cc-8-1-2-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "cc-12-1-2-2" on page http://localhost:8888/cc-12-1-2-2.html to file cc-12-1-2-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "cc-17-1-8-1-4-2" on page http://localhost:8888/cc-17-1-8-1-4-2.html to file cc-17-1-8-1-4-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "cc-17-1-12-2-1" on page http://localhost:8888/cc-17-1-12-2-1.html to file cc-17-1-12-2-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-3-5-19-1-4-4" on page http://localhost:8888/minimal-3-5-19-1-4-4.html to file minimal-3-5-19-1-4-4-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-3-5-19-1-10-2-9-1" on page http://localhost:8888/minimal-3-5-19-1-10-2-9-1.html to file minimal-3-5-19-1-10-2-9-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "ff-18-1" on page http://localhost:8888/ff-18-1.html to file ff-18-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-2-8" on page http://localhost:8888/minimal-4-2-8.html to file minimal-4-2-8-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-2-12-1-2" on page http://localhost:8888/minimal-4-2-12-1-2.html to file minimal-4-2-12-1-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-2-12-2-2" on page http://localhost:8888/minimal-4-2-12-2-2.html to file minimal-4-2-12-2-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-2-14-1-2" on page http://localhost:8888/minimal-4-2-14-1-2.html to file minimal-4-2-14-1-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-2-14-2-2" on page http://localhost:8888/minimal-4-2-14-2-2.html to file minimal-4-2-14-2-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-2-14-3-1" on page http://localhost:8888/minimal-4-2-14-3-1.html to file minimal-4-2-14-3-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-3-4" on page http://localhost:8888/minimal-4-3-4.html to file minimal-4-3-4-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-3-7" on page http://localhost:8888/minimal-4-3-7.html to file minimal-4-3-7-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-3-10-1-3" on page http://localhost:8888/minimal-4-3-10-1-3.html to file minimal-4-3-10-1-3-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-3-10-2-1" on page http://localhost:8888/minimal-4-3-10-2-1.html to file minimal-4-3-10-2-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-3-10-3-1" on page http://localhost:8888/minimal-4-3-10-3-1.html to file minimal-4-3-10-3-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-4-4" on page http://localhost:8888/minimal-4-4-4.html to file minimal-4-4-4-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-4-6" on page http://localhost:8888/minimal-4-4-6.html to file minimal-4-4-6-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-4-12-1-1-1" on page http://localhost:8888/minimal-4-4-12-1-1-1.html to file minimal-4-4-12-1-1-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-4-12-1-2-3" on page http://localhost:8888/minimal-4-4-12-1-2-3.html to file minimal-4-4-12-1-2-3-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-4-12-1-3-1" on page http://localhost:8888/minimal-4-4-12-1-3-1.html to file minimal-4-4-12-1-3-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-5-3" on page http://localhost:8888/minimal-4-5-3.html to file minimal-4-5-3-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-5-7" on page http://localhost:8888/minimal-4-5-7.html to file minimal-4-5-7-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-5-10-1-1-1" on page http://localhost:8888/minimal-4-5-10-1-1-1.html to file minimal-4-5-10-1-1-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-5-10-1-2-4" on page http://localhost:8888/minimal-4-5-10-1-2-4.html to file minimal-4-5-10-1-2-4-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-5-10-1-3-5" on page http://localhost:8888/minimal-4-5-10-1-3-5.html to file minimal-4-5-10-1-3-5-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-6-9-3-1" on page http://localhost:8888/minimal-4-6-9-3-1.html to file minimal-4-6-9-3-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-8-10-1-1-1" on page http://localhost:8888/minimal-4-8-10-1-1-1.html to file minimal-4-8-10-1-1-1-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-8-10-1-2-2" on page http://localhost:8888/minimal-4-8-10-1-2-2.html to file minimal-4-8-10-1-2-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-8-10-1-3-2" on page http://localhost:8888/minimal-4-8-10-1-3-2.html to file minimal-4-8-10-1-3-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-9-2-8-2" on page http://localhost:8888/minimal-4-9-2-8-2.html to file minimal-4-9-2-8-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-4-9-2-12-2" on page http://localhost:8888/minimal-4-9-2-12-2.html to file minimal-4-9-2-12-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-5-5-4-1-2" on page http://localhost:8888/minimal-5-5-4-1-2.html to file minimal-5-5-4-1-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-5-5-4-2-2" on page http://localhost:8888/minimal-5-5-4-2-2.html to file minimal-5-5-4-2-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-5-5-12-6" on page http://localhost:8888/minimal-5-5-12-6.html to file minimal-5-5-12-6-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-5-8-3-2" on page http://localhost:8888/minimal-5-8-3-2.html to file minimal-5-8-3-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-5-8-4-2" on page http://localhost:8888/minimal-5-8-4-2.html to file minimal-5-8-4-2-preview.png
+INFO    : automatic screenshot of interactive with identifier "minimal-5-9-2-8-2-2-1" on page http://localhost:8888/minimal-5-9-2-8-2-2-1.html to file minimal-5-9-2-8-2-2-1-preview.png
+INFO    : Closing http.server thread
+INFO    : downloading YouTube thumbnails from /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx for placement in /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/youtube
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/extract-youtube.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/extract-youtube.xsl
+INFO    : downloading http://i.ytimg.com/vi/HVaP8akjnaU/default.jpg as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/youtube/cc-17-1-8-1-2-1-1.jpg...
+INFO    : downloading http://i.ytimg.com/vi/_3YQvVKbqn0/default.jpg as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/youtube/minimal-3-5-17-1.jpg...
+INFO    : downloading http://i.ytimg.com/vi/qFgj8iunPWo/default.jpg as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/youtube/minimal-4-9-2-6-2-1-1.jpg...
+INFO    : YouTube thumbnail download complete
+INFO    : Generating generic video preview, aka "play button" into /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/play-button
+WARNING : You are trying to generate qrcodes, but the publication file does not have a base URL. This will result in qrcodes that do not point to anything meaningful.
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : discovering source file's directory name: /home/marcio/Documents/Test_pretext/new-pretext-project/source
+INFO    : verifying and expanding input directory: /home/marcio/Documents/Test_pretext/new-pretext-project/source/../generated-assets
+INFO    : input directory expanded to absolute path: /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets
+INFO    : verifying and expanding input directory: /home/marcio/Documents/Test_pretext/new-pretext-project/source/../assets
+INFO    : input directory expanded to absolute path: /home/marcio/Documents/Test_pretext/new-pretext-project/assets
+INFO    : manufacturing QR codes from /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx for placement in /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/extract-qrcode.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/extract-qrcode.xsl
+INFO    : creating URL with content "cc-3-1-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/cc-3-1-1.png...
+INFO    : creating URL with content "cc-8-1-2-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/cc-8-1-2-2.png...
+INFO    : creating URL with content "cc-12-1-2-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/cc-12-1-2-2.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=HVaP8akjnaU" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/cc-17-1-8-1-2-1-1.png...
+INFO    : creating URL with content "cc-17-1-8-1-4-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/cc-17-1-8-1-4-2.png...
+INFO    : creating URL with content "cc-17-1-12-2-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/cc-17-1-12-2-1.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=_3YQvVKbqn0" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-3-5-17-1.png...
+INFO    : creating URL with content "minimal-3-5-19-1-4-4.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-3-5-19-1-4-4.png...
+INFO    : creating URL with content "minimal-3-5-19-1-10-2-9-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-3-5-19-1-10-2-9-1.png...
+INFO    : creating URL with content "ff-18-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/ff-18-1.png...
+INFO    : creating URL with content "minimal-4-2-8.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-2-8.png...
+INFO    : creating URL with content "minimal-4-2-12-1-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-2-12-1-2.png...
+INFO    : creating URL with content "minimal-4-2-12-2-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-2-12-2-2.png...
+INFO    : creating URL with content "minimal-4-2-14-1-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-2-14-1-2.png...
+INFO    : creating URL with content "minimal-4-2-14-2-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-2-14-2-2.png...
+INFO    : creating URL with content "minimal-4-2-14-3-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-2-14-3-1.png...
+INFO    : creating URL with content "minimal-4-3-4.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-3-4.png...
+INFO    : creating URL with content "minimal-4-3-7.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-3-7.png...
+INFO    : creating URL with content "minimal-4-3-10-1-3.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-3-10-1-3.png...
+INFO    : creating URL with content "minimal-4-3-10-2-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-3-10-2-1.png...
+INFO    : creating URL with content "minimal-4-3-10-3-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-3-10-3-1.png...
+INFO    : creating URL with content "minimal-4-4-4.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-4-4.png...
+INFO    : creating URL with content "minimal-4-4-6.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-4-6.png...
+INFO    : creating URL with content "minimal-4-4-12-1-1-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-4-12-1-1-1.png...
+INFO    : creating URL with content "minimal-4-4-12-1-2-3.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-4-12-1-2-3.png...
+INFO    : creating URL with content "minimal-4-4-12-1-3-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-4-12-1-3-1.png...
+INFO    : creating URL with content "minimal-4-5-3.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-5-3.png...
+INFO    : creating URL with content "minimal-4-5-7.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-5-7.png...
+INFO    : creating URL with content "minimal-4-5-10-1-1-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-5-10-1-1-1.png...
+INFO    : creating URL with content "minimal-4-5-10-1-2-4.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-5-10-1-2-4.png...
+INFO    : creating URL with content "minimal-4-5-10-1-3-5.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-5-10-1-3-5.png...
+INFO    : creating URL with content "minimal-4-6-9-3-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-6-9-3-1.png...
+INFO    : creating URL with content "minimal-4-8-10-1-1-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-8-10-1-1-1.png...
+INFO    : creating URL with content "minimal-4-8-10-1-2-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-8-10-1-2-2.png...
+INFO    : creating URL with content "minimal-4-8-10-1-3-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-8-10-1-3-2.png...
+INFO    : creating URL with content "https://www.youtube.com/watch?v=qFgj8iunPWo" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-9-2-6-2-1-1.png...
+INFO    : creating URL with content "minimal-4-9-2-8-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-9-2-8-2.png...
+INFO    : creating URL with content "minimal-4-9-2-12-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-4-9-2-12-2.png...
+INFO    : creating URL with content "minimal-5-5-4-1-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-5-5-4-1-2.png...
+INFO    : creating URL with content "minimal-5-5-4-2-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-5-5-4-2-2.png...
+INFO    : creating URL with content "minimal-5-5-12-6.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-5-5-12-6.png...
+INFO    : creating URL with content "minimal-5-8-3-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-5-8-3-2.png...
+INFO    : creating URL with content "minimal-5-8-4-2.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-5-8-4-2.png...
+INFO    : creating URL with content "minimal-5-9-2-8-2-2-1.html" as /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets/qrcode/minimal-5-9-2-8-2-2-1.png...
+INFO    : QR code creation complete
+INFO    : Removing temporary directory /tmp/ptx-z44vle_u
+INFO    : Removing temporary directory /tmp/ptx-lgm7vcmq
+INFO    : Removing temporary directory /tmp/ptx-ga_vn5fo
+INFO    : Removing temporary directory /tmp/ptx-b93a9lx0
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /home/marcio/Documents/Test_pretext/new-pretext-project/output/print.
+WARNING : You requested outputs of pdf, but this is not a recognized option.  Defaulting to 'pdf-only'.
+INFO    : discovering source file's directory name: /home/marcio/Documents/Test_pretext/new-pretext-project/source
+INFO    : verifying and expanding input directory: /home/marcio/Documents/Test_pretext/new-pretext-project/source/../generated-assets
+INFO    : input directory expanded to absolute path: /home/marcio/Documents/Test_pretext/new-pretext-project/generated-assets
+INFO    : verifying and expanding input directory: /home/marcio/Documents/Test_pretext/new-pretext-project/source/../assets
+INFO    : input directory expanded to absolute path: /home/marcio/Documents/Test_pretext/new-pretext-project/assets
+INFO    : discovering source file's directory name: /home/marcio/Documents/Test_pretext/new-pretext-project/source
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : converting /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx to LaTeX as /tmp/ptx-enem9e0m/main.tex
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/pretext-latex.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/pretext-latex.xsl
+INFO    : XSL conversion of /home/marcio/Documents/Test_pretext/new-pretext-project/source/main.ptx by /home/marcio/.ptx/2.32.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/marcio/.ptx/2.32.0/core/xsl/utilities/report-publisher-variables.xsl
+CRITICAL: [Errno 2] No such file or directory: 'main.pdf'
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
